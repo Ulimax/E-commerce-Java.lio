@@ -1,0 +1,41 @@
+:root{
+    --azul_cielo: #a6e5e6; 
+    --beige: #FAEED2;
+    --coral: #eba972;
+    --azul_claro: #0098B1; 
+    --azul_fuerte:#027B8D;
+    
+}
+
+.navbar,#carrito,#login {
+    background-color: #a6e5e6 !important; 
+}
+
+body{
+    background-color: #FAEED2;
+}
+
+.titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  button.nav-search-btn:before, button.nav-search-btn:focus:before {
+    content: "";
+    display: block;
+    height: 26px;
+    border-left: 1px solid #e6e6e6;
+    position: absolute;
+    top: 6.5px;
+}
+
+.nav-search-btn .nav-icon-search:before {
+    content: "🔍"; 
+    vertical-align: top;
+}
+
+.nav-search-btn .nav-icon-search {
+    font-size: 16px;
+    line-height: 21px;
+}
