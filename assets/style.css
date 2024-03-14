@@ -30,12 +30,17 @@ body{
     top: 6.5px;
 }
 
-.nav-search-btn .nav-icon-search:before {
-    content: "🔍"; 
-    vertical-align: top;
-}
 
 .nav-search-btn .nav-icon-search {
     font-size: 16px;
     line-height: 21px;
 }
+
+/* #botonlupa{
+    font-size: x-large;
+}  */
+
+/* #botonlupa{
+    margin: auto;
+} */
+
