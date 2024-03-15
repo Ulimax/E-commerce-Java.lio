@@ -10,15 +10,15 @@
 
 .circulo{
     border-radius: 1%;
-    width: 15rem;
-    height: 15rem;
+    width: auto;
+    height: auto;
     background-color: var(--colorGraficos);
 }   
 
 #target{
-    position: absolute;
-    top: -5rem;
-    left: 37rem;
+    position: sticky !important;
+    top: 10rem;
+    left: 40rem;
 
 }
 
