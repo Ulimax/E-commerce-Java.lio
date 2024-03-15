@@ -1,0 +1,101 @@
+:root{
+    --colorPrincipal: #0098B1;
+    --colorSecundario: #027B8D;
+    --colorTexto: #4D3826;
+    --colorFondo: #FAEED2;
+    --colorComplementario: #EBA972;
+    --colorGraficos: #a6e5e6;
+
+}
+
+.circulo{
+    border-radius: 1%;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--colorGraficos);
+}   
+
+#target{
+    position: absolute;
+    top: -5rem;
+    left: 37rem;
+
+}
+
+.vision{
+    background-color: #a6e5e6 !important;
+}
+
+body{
+   background-color: #FAEED2;
+   text-align: center; 
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+#hotel{
+    margin-right: 30px;
+    width: 50px;
+    height: 60px;
+}
+
+#beach{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#mountain{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#tent{
+    margin-right: 30px;
+    width: 50px;
+    height: 70px;
+}
+
+#cabin{
+    
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+}
+
+#aboutus{
+    margin: 120px;
+    background-color: #027B8D;
+    padding: 50px 70px;
+    border-radius: 10px;
+}
+
+.container-md{
+    background-color: white;
+   
+}
+
+.size{
+    width: autos;
+    height: 37rem;
+}
+
+h2{
+    font-family: "Namdhinggo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Namdhinggo", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
