@@ -1,5 +1,33 @@
+:root{
+    --colorPrincipal: #0098B1;
+    --colorSecundario: #027B8D;
+    --colorTexto: #4D3826;
+    --colorFondo: #FAEED2;
+    --colorComplementario: #EBA972;
+    --colorGraficos: #a6e5e6;
+
+}
+
+.circulo{
+    border-radius: 1%;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--colorGraficos);
+}   
+
+#target{
+    position: absolute;
+    top: -5rem;
+    left: 37rem;
+
+}
+
+.vision{
+    background-color: #a6e5e6 !important;
+}
+
 body{
-    background-color: #FAEED2;
+   background-color: #FAEED2;
    text-align: center; 
    font-family: "Titillium Web", sans-serif;
    font-weight: 400;
@@ -69,4 +97,5 @@ h1{
     font-weight: 800;
     font-style: normal;
 }
+
 
