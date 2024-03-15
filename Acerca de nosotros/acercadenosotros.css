@@ -1,8 +1,72 @@
-*{
+body{
     background-color: #FAEED2;
+   text-align: center; 
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 #hotel{
-    width: 32px;
-    height: 30px;
+    margin-right: 30px;
+    width: 50px;
+    height: 60px;
 }
+
+#beach{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#mountain{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#tent{
+    margin-right: 30px;
+    width: 50px;
+    height: 70px;
+}
+
+#cabin{
+    
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+}
+
+#aboutus{
+    margin: 120px;
+    background-color: #027B8D;
+    padding: 50px 70px;
+    border-radius: 10px;
+}
+
+.container-md{
+    background-color: white;
+   
+}
+
+.size{
+    width: autos;
+    height: 37rem;
+}
+
+h2{
+    font-family: "Namdhinggo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Namdhinggo", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
