@@ -36,11 +36,12 @@ body{
     line-height: 21px;
 }
 
-/* #botonlupa{
-    font-size: x-large;
-}  */
+#buscador {
+    border-radius: 10px 0 0 10px;
+}
 
-/* #botonlupa{
-    margin: auto;
-} */
-
+#boton-lupa {
+    border: 0.5px solid rgb(160, 160, 160) !important;
+    border-radius: 0 10px 10px 0;
+    background-color: whitesmoke;
+}

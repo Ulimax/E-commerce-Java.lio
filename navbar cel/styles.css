@@ -1,0 +1,28 @@
+:root{
+    --azul_cielo: #a6e5e6; 
+    --beige: #FAEED2;
+    --coral: #eba972;
+    --azul_claro: #0098B1; 
+    --azul_fuerte:#027B8D;
+    
+}
+
+.navbar {
+    background-color: #a6e5e6 !important; 
+}
+
+body{
+    background-color: #FAEED2;
+}
+
+
+.titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+  #logo-colapsado{
+    margin-right:auto ;
+  }
