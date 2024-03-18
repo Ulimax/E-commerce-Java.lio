@@ -1,6 +1,45 @@
-#footer {
-    height: em;
+footer {
+    background-color:blue;
+    width: 100%;
 }
+footer .row {
+    text-align: left;
+}
+.footer-navigation{
+    
+    list-style: none;
+}
+.enlaces a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.iconos-footer{
+    width: 20px;
+    margin-right: 10px;
+}
+.copyright p{
+    color: aliceblue;
+}
+/* 
+#footer::before{
+
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: aqua;
+    content: "";
+    height: 100%;
+
+} */
+
 /*
 main{
     height: 38em;
