@@ -1,0 +1,59 @@
+:root{
+    --azul_cielo: #a6e5e6; 
+    --beige: #FAEED2;
+    --coral: #eba972;
+    --azul_claro: #0098B1; 
+    --azul_fuerte:#027B8D;
+}
+
+
+
+.navbar,#carrito,#login {
+    background-color: #a6e5e6 !important; 
+}
+
+body{
+    background-color: #FAEED2;
+}
+
+/* #full-navbar {
+    height: 4.5em;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+} */
+
+.titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: small;
+}
+
+#buscador {
+    border-radius: 10px 0 0 10px;
+    height: 30px;
+    font-size: small;
+}
+
+#boton-lupa {
+    border: 0.5px solid rgb(160, 160, 160) !important;
+    border-radius: 0 10px 10px 0;
+    font-size: small;
+    padding: 0;
+    width: 35px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+
+#boton-lupa:hover {
+    background-color: rgb(235, 235, 235) !important;
+}
+
+
+footer {
+    height: 20vh !important;
+}
+
+.nav-item:hover > a {
+    color: var(--azul_fuerte) !important;
+}
