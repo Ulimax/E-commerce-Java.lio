@@ -6,8 +6,6 @@
     --azul_fuerte:#027B8D;
 }
 
-
-
 .navbar,#carrito,#login {
     background-color: #a6e5e6 !important; 
 }
@@ -15,12 +13,6 @@
 body{
     background-color: #FAEED2;
 }
-
-/* #full-navbar {
-    height: 4.5em;
-    align-items: center;
-    border-radius: 0 0 15px 15px;
-} */
 
 .titillium-web-semibold {
     font-family: "Titillium Web", sans-serif;
@@ -57,3 +49,28 @@ footer {
 .nav-item:hover > a {
     color: var(--azul_fuerte) !important;
 }
+
+/*button.nav-search-btn:before, button.nav-search-btn:focus:before {
+    content: "";
+    display: block;
+    height: 26px;
+    border-left: 1px solid #e6e6e6;
+    position: absolute;
+    top: 6.5px;
+}
+
+
+.nav-search-btn .nav-icon-search {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#buscador {
+    border-radius: 10px 0 0 10px;
+}
+
+#boton-lupa {
+    border: 0.5px solid rgb(160, 160, 160) !important;
+    border-radius: 0 10px 10px 0;
+    background-color: whitesmoke;
+*/
