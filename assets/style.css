@@ -14,6 +14,10 @@ body{
     background-color: #FAEED2;
 }
 
+.login-icon {
+    display: none;
+}
+
 .titillium-web-semibold {
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
@@ -21,8 +25,13 @@ body{
     font-size: small;
 }
 
+#grupo-buscador {
+    width: 20%;
+}
+
 #buscador {
     border-radius: 10px 0 0 10px;
+    width: 100%;
     height: 30px;
     font-size: small;
 }
@@ -74,3 +83,7 @@ footer {
     border-radius: 0 10px 10px 0;
     background-color: whitesmoke;
 */
+
+#logo-colapsado{
+    margin-right: auto ;
+}
