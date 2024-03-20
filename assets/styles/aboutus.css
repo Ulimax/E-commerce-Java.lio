@@ -69,11 +69,22 @@ section{
     padding: 0px;
 }
 
-#aboutus{
-    margin: 120px;
+
+
+#aboutus {
+    margin: 12rem; /* Este margen solo se aplicará si la pantalla es más ancha que 1250px */
     background-color: #027B8D;
     padding: 50px 70px;
     border-radius: 10px;
+}
+
+@media (max-width: 1250px) {
+    #aboutus {
+        margin: 0;
+        background-color: #027B8D;
+        padding: 50px 70px;
+        border-radius: 10px;
+    }
 }
 
 .container-md{
