@@ -81,6 +81,7 @@ section{
 @media (max-width: 1250px) {
     #aboutus {
         margin: 0;
+        width: 100%;
         background-color: #027B8D;
         padding: 50px 70px;
         border-radius: 10px;
