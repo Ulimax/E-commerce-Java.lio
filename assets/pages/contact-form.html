@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Namdhinggo:wght@400;500;600;700;800&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Namdhinggo:wght@400;500;600;700;800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="stylesheet" href="../styles/aboutus.css">
+    <title>Contactanos</title>
+</head>
+<body>
+
+
+
+
+
+
+    <header class="w-100 d-block">
+        <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#">
+              <img src="./assets/icons/Logo_Planeta.png" alt="Logo de Nuevo Mundo Travel" width="60" height="auto" class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand ms-2 me-auto d-inline-block d-none d-xl-block" id="logo-letras" href="#">
+              <img src="./assets/icons/Logo_Letras.png" alt="Logo-letras" width="200" height="auto">
+            </a>
+            <form id="grupo-buscador" class="d-flex titillium-web-semibold ms-auto me-4" role="search">
+              <input id="buscador" class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+              <button id="boton-lupa" class="btn btn-outline-info-subtle border border-0 titillium-web-semibold"
+              type="submit">🔍︎</button>
+            </form>
+            <ul class="navbar-nav navbar-text mb-2 mb-lg-0 d-flex align-items-center">
+              <li class="nav-item ">
+                <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="./assets/pages/contact-form.html">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="./assets/pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active ms-2 me-3 titillium-web-semibold" aria-current="page" href="./assets/pages/about-us.html">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                     <img class="login-icon" src="./assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
+                     <img class="login-icon" src="./assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
+                </a>
+                <ul id="menu-usuario" class="dropdown-menu dropdown-menu-end">
+                     <li><a class="dropdown-item" href="#">¡Regístrate!</a></li>
+                     <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
+                     <li>
+                     <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="#">Mis viajes</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" class="me-2 ms-3">
+              <img src="./assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
+            </a>
+          </div>
+        </nav>
+    
+        <nav class="navbar bg-body-tertiary fixed-top d-md-none">
+          <div class="container-fluid">
+            <a id="logo-colapsado" class="navbar-brand ms-2 p-2" href="#"><img src="./assets/icons/Logo_Planeta.png" alt="Logo Nuevo Mundo Travel" width="85" height="me-auto"> 
+    
+              <img class="d-none d-lg-block d-flex p-2" src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="10"></a>
+    
+              <a href="#" class="me-2"> <img src="./assets/icons/backpack.png" alt="icono mochila" width="45" height="me-auto"></a>
+    
+            <button class="navbar-toggler mx-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="200" height="me-auto">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+      
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Contáctanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Acerca de nosotros</a>
+                  </li>
+                  <hr class="border bg-dark-subtle border-2 opacity-50">
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
+                      Regístrarse
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
+                      Iniciar sesión
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">
+                      Mis viajes
+                    </a>
+                  </li>
+                </ul>
+                <hr class="border bg-dark-subtle border-2 opacity-50">
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <section>
+        <img id="hotel" src="../icons/bed.png" alt="hotel">
+        <img id="beach" src="../icons/sunset.png" alt="beach">
+        <img id="mountain" src="../icons/mountain.png" alt="mountain">
+        <img id="tent" src="../icons/tent.png"  alt="tent">
+        <img id="cabin" src="../icons/cabin.png" alt="cabin">
+        </div>
+    </section>
+
+<section>
+    <h1 class="text-center">Contactanos</h1>
+<form id="register-form" action="https://formsubmit.co/a503a2c1d64d1164944b46206fa8b9ba" onsubmit="return validateForm()"  method="POST" >
+<div class="container rounded-4 backgroundform">
+    <fieldset>
+
+        <div class="row">
+            <label for="name" class="form-label m-2 col-sm fw-bold">
+                Nombre
+            <input id="name" name="name" type="text" class="form-control borderform" required placeholder="Esquivel" /></label>
+
+            <label for="email" class="form-label m-2 col-sm fw-bold">
+                Correo
+            <input id="email" name="email" type="email" class="form-control borderform" required placeholder="correo@correo.com"/></label>
+        </div>
+
+        <div class="row">
+            <label for="telephone" class="form-label m-2 col-sm fw-bold">
+                Telefono
+            <input id="telephone" name="telephone" type="text" class="form-control borderform" pattern="[0-9]{10}" required placeholder="0123456789"/></label>
+
+            <label for="about" class="form-label m-2 col-sm fw-bold">
+                Asunto
+            <input id="about" name="about" type="text" class="form-control borderform" required placeholder="Odio tu pagina"/></label>
+        </div>
+
+        <div class="row">
+            <label for="comment" class="form-label m-2 col fw-bold">
+                Comentario
+            <textarea id="comment" name="comment" type="text" class="form-control borderform" rows="3" required placeholder="no se crean esta bien chida, Esquivel no te vallas"></textarea></label>
+        </div>
+
+        <div class="row-2 text-center m-2">
+            <button type="submit" value="Submit" class="btn buttonform"> Enviar </button>
+        </div>
+
+    </fieldset>
+</div>
+</form>
+<div class="container d-none d-sm-block">
+    <div clss="row">
+        <div class="col-md-6 offset-md-3 position-relative">
+            <img class="img-fluid m-2 text-center" src="../img/pngwing.com_1_10.webp">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <p class="postit">Dirección</p>
+                    <p class="postit">Casa de Ezquivel</p>
+                    <p class="postit">nuevomundotravell@gmail.com</p>
+                    <p class="postit">00000-00000</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <di class="col d-block d-sm-none text-start">
+        <p class="postit">Dirección</p>
+        <p class="postit">Casa de Ezquivel</p>
+        <p class="postit">nuevomundotravell@gmail.com</p>
+        <p class="postit">00000-00000</p>
+    </di>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../scripts/formulario.js"></script>
+
+</body>
+</html>
