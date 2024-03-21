@@ -15,130 +15,161 @@
   <title>Nuevo Mundo Travel</title>
 </head>
 
-<body>
+<body class="d-flex flex-column">
   <header class="w-100 d-block">
-      <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-2" href="#">
-            <img src="./assets/icons/Logo_Planeta.png" alt="Logo de Nuevo Mundo Travel" width="60" height="auto" class="d-inline-block align-text-top">
-          </a>
-          <a class="navbar-brand ms-2 me-auto d-inline-block d-none d-xl-block" id="logo-letras" href="#">
-            <img src="./assets/icons/Logo_Letras.png" alt="Logo-letras" width="200" height="auto">
-          </a>
-          <form id="grupo-buscador" class="d-flex titillium-web-semibold ms-auto me-4" role="search">
-            <input id="buscador" class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-            <button id="boton-lupa" class="btn btn-outline-info-subtle border border-0 titillium-web-semibold"
-            type="submit">🔍︎</button>
-          </form>
-          <ul class="navbar-nav navbar-text mb-2 mb-lg-0 d-flex align-items-center">
-            <li class="nav-item ">
-              <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Contáctanos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active ms-2 me-3 titillium-web-semibold" aria-current="page" href="#">Acerca de nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                   <img class="login-icon" src="./assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
-                   <img class="login-icon" src="./assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
-              </a>
-              <ul id="menu-usuario" class="dropdown-menu dropdown-menu-end">
-                   <li><a class="dropdown-item" href="#">¡Regístrate!</a></li>
-                   <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
-                   <li>
-                   <hr class="dropdown-divider">
-                   </li>
-                   <li><a class="dropdown-item" href="#">Mis viajes</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a href="#" class="me-2 ms-3">
-            <img src="./assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
-          </a>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="#">
+          <img src="./assets/icons/Logo_Planeta.png" alt="Logo de Nuevo Mundo Travel" width="60" height="auto" class="d-inline-block align-text-top">
+        </a>
+        <a class="navbar-brand ms-2 me-auto d-inline-block d-none d-xl-block" id="logo-letras" href="#">
+          <img src="./assets/icons/Logo_Letras.png" alt="Logo-letras" width="200" height="auto">
+        </a>
+        <form id="grupo-buscador" class="d-flex titillium-web-semibold ms-auto me-4" role="search">
+          <input id="buscador" class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          <button id="boton-lupa" class="btn btn-outline-info-subtle border border-0 titillium-web-semibold"
+          type="submit">🔍︎</button>
+        </form>
+        <ul class="navbar-nav navbar-text mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2 titillium-web-semibold" aria-current="page" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-2 me-3 titillium-web-semibold" aria-current="page" href="#">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                 <img class="login-icon" src="./assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
+                 <img class="login-icon" src="./assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
+            </a>
+            <ul id="menu-usuario" class="dropdown-menu dropdown-menu-end">
+                 <li><a class="dropdown-item" href="#">¡Regístrate!</a></li>
+                 <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
+                 <li>
+                 <hr class="dropdown-divider">
+                 </li>
+                 <li><a class="dropdown-item" href="#">Mis viajes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#" class="me-2 ms-3">
+          <img src="./assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
+        </a>
+      </div>
+    </nav>
 
-      <nav class="navbar bg-body-tertiary fixed-top d-md-none">
-        <div class="container-fluid">
-          <a id="logo-colapsado" class="navbar-brand ms-2 p-2" href="#"><img src="./assets/icons/Logo_Planeta.png" alt="Logo Nuevo Mundo Travel" width="85" height="me-auto"> 
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none">
+      <div class="container-fluid">
+        <a id="logo-colapsado" class="navbar-brand ms-2 p-2" href="#"><img src="./assets/icons/Logo_Planeta.png" alt="Logo Nuevo Mundo Travel" width="85" height="me-auto"> 
+
+          <img class="d-none d-lg-block d-flex p-2" src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="10"></a>
+
+          <a href="#" class="me-2"> <img src="./assets/icons/backpack.png" alt="icono mochila" width="45" height="me-auto"></a>
+
+        <button class="navbar-toggler mx-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="200" height="me-auto">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
   
-            <img class="d-none d-lg-block d-flex p-2" src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="10"></a>
-  
-            <a href="#" class="me-2"> <img src="./assets/icons/backpack.png" alt="icono mochila" width="45" height="me-auto"></a>
-  
-          <button class="navbar-toggler mx-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/icons/Logo_Letras.png" alt="Letras nuevo mundo travel" width="200" height="me-auto">
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-    
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Contáctanos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Acerca de nosotros</a>
-                </li>
-                <hr class="border bg-dark-subtle border-2 opacity-50">
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
-                    Regístrarse
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
-                    Iniciar sesión
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">
-                    Mis viajes
-                  </a>
-                </li>
-              </ul>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Acerca de nosotros</a>
+              </li>
               <hr class="border bg-dark-subtle border-2 opacity-50">
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
+                  Regístrarse
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#" >
+                  Iniciar sesión
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">
+                  Mis viajes
+                </a>
+              </li>
+            </ul>
+            <hr class="border bg-dark-subtle border-2 opacity-50">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+</header>
 
+<main class="w-100 d-block">
+  <h2>¡Viajaremos con ustedes muy pronto!</h2>
+</main>
 
-
-
-
-  </header>
-  <main class="w-100 d-block">
-    <h2>¡Viajaremos con ustedes muy pronto!</h2>
-  </main>
-  <footer>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+<footer>
+  <div class="align-self-end container-fluid footer text-center">
+    <div class="row">
+      <div class="col-3">
+        <div class="redes fw-medium titillium-web-semibold p-3 text-light rounded-3">
+          <img src="./assets/icons/logo_completo.png" width="100px" alt="Logo nuevo mundo travel">
+          <p class="titillium-web-semibold">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</p>
+            <p class="titillium-web-semibold">¡Conocenos!</p>
+            <img class="iconos-footer"src="./assets/img/Instagram_logo_2016.svg.png" alt="Instagram">
+            <img class="iconos-footer"src="./assets/img/Facebook_f_logo_(2019).svg" alt="Facebook">
+            <img class="iconos-footer"src="./assets/img/WhatsApp.svg.png" alt="Whatsapp">
+        </div>
+      </div>
+      <div class="navegacion col-4 fw-medium p-3 text-light titillium-web-semibold rounded-3">
+        <p class="titillium-web-semibold">Navegación</p>
+        <ul class="titillium-web-semibold footer-navigation">
+          <li><a href="">Contacto</a>
+            <li><a href="">Blog</a>
+              <li><a href="">Acerca de nosotros</a>
+        </ul>
+      </div>
+      <div class="enlaces col fw-medium p-3 text-light titillium-web-semibold rounded-3">
+        <a class="titillium-web-semibold" href="">Politica de privacidad</a>
+        <a class="titillium-web-semibold" href="">Aviso legal</a>
+        <a class="titillium-web-semibold" href="">Cookies</a>
+        <br>
+        <p class="titillium-web-semibold">Nuestros aliados</p>
+        <a href="https://mexico.generation.org/">
+          <img src="./assets/img/Generation_logo_white.png" width="120px" height="auto" alt="Logo Generation"></a>
+      </div>
+  </div>
+  <div class="copyright titillium-web-semibold container align-bottom">
+    <p class="mt-auto">Copyright &copy 2024 Nuevo Mundo Travel</p>
+    <p class="">Todos los derechos reservados</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="./assets/main.js"></script>
+<script src="./assets/main.js"></script>
 </body>
 
 </html>
