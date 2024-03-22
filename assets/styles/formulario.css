@@ -1,0 +1,18 @@
+
+.borderform{
+    border-width: 0.5em 1em;
+    border-color: #0098B1;
+    
+}
+
+.backgroundform{
+    background-color: #EBA972;
+}
+
+.postit{
+    font: size 50%;;
+}
+
+.buttonform{
+    background-color: #DCEDC0;
+}
