@@ -1,24 +1,204 @@
-.imagencarrusel {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 15px;
+    
+}
+
+body{
+    background-color: #faeed2;
+}
+
+.products-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header{
+    height: 80px;
+    width: 90%;
+    background-color: #027B8D;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.header .headertext{
+    font-size: 30px;
+    font-weight: bold;
+    color: #faeed2;
+}
+
+.cart{
+    display: flex;
+    background-color: #faeed2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: #027B8D;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin-bottom: 30px;
+     
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  
+    
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #a6e5e6;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: #027B8D;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #faeed2;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #4d3b21;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #027B8D;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 12px;
+    font-weight: bold;
+    color: #4d3b21;
+}
+.bottom button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #027B8D;
+    padding: 7px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #faeed2;
+}
+.bottom button:hover{
+    background-color: #a6e5e6;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #027B8D;
+    color: #faeed2;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #faeed2;
+    font-size: 12px;
+    border-bottom: 1px solid #a6e5e6;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #027B8D;
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+}
+.rowimg{
+    max-width: 47px;
+    max-height: 47px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #4d3b21;
+}
+
+
+
+
+
+
+  .imagencarrusel {
   height: 500px !important;
-  /* height: 40rem;   */
-  /*  background-image: url(../img/img-carrusel); */
+
    background-repeat: no-repeat;
       background-position: end center; 
   min-height: 300px !important;
 }
-
-@media(max-width: 1200px){
-      .hero{
-          height: 75rem;
-      }
-  }  
- 
   .carousel-caption h3, .carousel-caption p {
-  /*  background: rgba(0, 0, 0, 0.5);  */
-  /* Fondo semitransparente */
+
   color: #EBA972 ;
   text-shadow: 0 2px 2px #000;
-  /* Color del texto */
+  
   margin-bottom: 35px;
   /* Alinear al fondo */
   /* Alinear a la izquierda */
