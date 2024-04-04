@@ -1,0 +1,93 @@
+html, body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+body{
+    background-color: #000;
+}
+
+/* .blog_Entries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+} */
+
+.blog-item{
+    display: grid;
+}
+
+
+
+.blog_item:hover{
+    
+    cursor: pointer;
+}
+
+.blog_img1{
+    background-image: url("/assets/img/saludable.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50rem;
+    z-index: 23;
+    
+   
+}
+
+.blog_img2{
+    background-image: url("/assets/img/hiking.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50rem;
+    width: 50%;
+    margin: 0 auto;
+   
+    
+}
+
+.blog_img3{
+    background-image: url("/assets/img/swimming.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50rem;
+    
+}
+
+.texto_blog{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.texto_blog span:last-of-type{
+    color: blue;
+}
+
+
+
+
+
+
+
