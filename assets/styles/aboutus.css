@@ -8,30 +8,13 @@
 
 }
 
-.circulo{
-    border-radius: 1%;
-    width: 15rem;
-    height: 15rem;
-    background-color: var(--colorGraficos);
-}   
 
-#target{
-    position: absolute;
-    top: -5rem;
-    left: 37rem;
-
-}
-
-.vision{
-    background-color: #a6e5e6 !important;
-}
 
 body{
+   width: 100%;
    background-color: #FAEED2;
    text-align: center; 
-   font-family: "Titillium Web", sans-serif;
-   font-weight: 400;
-   font-style: normal;
+   
 }
 
 #hotel{
@@ -64,52 +47,6 @@ body{
     height: 50px;
 }
 
-section{
-    margin: 0px;
-    padding: 0px;
-}
-
-#aboutus h2{
-    text-align: center;
-}
-
-@media (max-width: 2050px){
-#aboutus {
-    text-align: justify;
-    margin: 12rem; /* Este margen solo se aplicará si la pantalla es más ancha que 1250px */
-    background-color: var(--colorSecundario);
-    padding: 5rem 7rem;
-    border-radius: 10px;
-}
-}
-
-@media (max-width: 1000px) {
-    #aboutus { 
-        margin: 0;
-        padding: 100px;
-        width: 100%;
-        padding: 50px 70px;
-    }
-    .aboutus-div-text{
-
-        width: 122%;
-        margin-left: -12%;
-        padding: 10%;
-
-    }
-    .container {
-        max-height: 50rem;
-    }
-    
-    img{
-        max-height: 50rem;
-    }
-}
-
-.container {
-    max-height: 500px;
-}
-
 img{
     max-height: 500px;
 }
@@ -118,17 +55,20 @@ img{
 
 h2{
     font-family: "Namdhinggo", serif;
+    font-size: 4rem;
     font-weight: 700;
     font-style: normal;
 }
 
 h1{
     font-family: "Namdhinggo", serif;
+    font-size: 5rem;
     font-weight: 800;
     font-style: normal;
 }
 
-.section-about{
-    display: flex;
-    justify-content: center;
-  }
+h3{
+    font-size: 3rem;
+}
+
+
