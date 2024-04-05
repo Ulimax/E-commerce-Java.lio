@@ -1,0 +1,8 @@
+body{
+    background-color: var(--beige);
+}
+
+input:hover,
+textarea:hover{
+    border: 1px solid var(--azul_fuerte) ;
+}
