@@ -81,5 +81,17 @@ const showError= (errorMessage)=>{
 }
 
 const writeDestination = (destiny)=>{
-  
+    const {title, date, price, description}=destiny;
+    const titulo=document.createElement("p");
+    titulo.innerText=title;
+    document.querySelector("contenedorParrafos").appendChild(titulo);
+    const fecha=document.createElement("p");
+    fecha.innerText=date;
+    document.querySelector("contenedorParrafos").appendChild(fecha);
+    const precio=document.createElement("p");
+    precio.innerText=price;
+    document.querySelector("contenedorParrafos").appendChild(precio);
+    const descripcion=document.createElement("p");
+    descripcion.innerText=description;
+    document.querySelector("contenedorParrafos").appendChild(descripcion);
 }
