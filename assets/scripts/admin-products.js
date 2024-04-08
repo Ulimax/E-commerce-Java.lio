@@ -74,7 +74,12 @@ const isValid = (newDestination)=>{
 const showError= (errorMessage)=>{
   let alert = "";
   for (let message of errorMessage ){
-      alert += `<li>${message}</li>`
+      alert += `<div class="alert alert-danger d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+       ${message} 
+      </div>
+    </div>`
   }
 
   document.getElementById("error-message").innerHTML= alert;
@@ -84,14 +89,14 @@ const writeDestination = (destiny)=>{
     const {title, date, price, description}=destiny;
     const titulo=document.createElement("p");
     titulo.innerText=title;
-    document.querySelector("contenedorParrafos").appendChild(titulo);
+    document.querySelector(".contenedorParrafos").appendChild(titulo);
     const fecha=document.createElement("p");
     fecha.innerText=date;
-    document.querySelector("contenedorParrafos").appendChild(fecha);
+    document.querySelector(".contenedorParrafos").appendChild(fecha);
     const precio=document.createElement("p");
     precio.innerText=price;
-    document.querySelector("contenedorParrafos").appendChild(precio);
+    document.querySelector(".contenedorParrafos").appendChild(precio);
     const descripcion=document.createElement("p");
     descripcion.innerText=description;
-    document.querySelector("contenedorParrafos").appendChild(descripcion);
+    document.querySelector(".contenedorParrafos").appendChild(descripcion);
 }
