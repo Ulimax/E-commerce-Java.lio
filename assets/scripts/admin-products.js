@@ -57,7 +57,7 @@ const isValid = (newDestination)=>{
     }
     if(newDestination.price<=0){
         valid = false;
-        message.push("El precio del destino tiene no puede ser negativo");
+        message.push("El precio del destino no puede ser negativo");
     }
     if(!newDestination.description && newDestination.description.length<100){
         valid = false;
@@ -74,13 +74,15 @@ const isValid = (newDestination)=>{
 const showError= (errorMessage)=>{
   let alert = "";
   for (let message of errorMessage ){
-      alert += `<div class="alert alert-danger d-flex align-items-center" role="alert">
-      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-      <div>
-       ${message} 
-      </div>
-    </div>`
+      alert += `
+      <div class="alert alert-danger  align-items-center" role="alert">
+          <p class="text-center">
+          ${message} 
+          </p>
+      </div>`
   }
+
+  console.log("Hola");
 
   document.getElementById("error-message").innerHTML= alert;
 }
