@@ -10,7 +10,7 @@ const getPageName = () => {
 } */
 
 const renderNavbar = () => {
-     const pages = ["index.html", "contact-form.html", "blog.html", "about-us.html"];
+     const pages = ["index.html", "contact-form.html", "blog.html", "about-us.html", "sign-up.html"];
 
      document.querySelector("header").innerHTML = `
      <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
@@ -48,7 +48,7 @@ const renderNavbar = () => {
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                          <li><a class="dropdown-item" href="/assets/pages/login.html">Inicia sesión</a></li>
-                         <li><a class="dropdown-item" href="/assets/pages/login.html">¡Regístrate!</a></li>
+                         <li><a class="dropdown-item" href="/assets/pages/sign-up.html">¡Regístrate!</a></li>
                          <li><hr class="dropdown-divider"></li>
                          <li><a class="dropdown-item" href="/assets/pages/login.html">Mis viajes</a></li>
                     </ul>
@@ -107,9 +107,10 @@ const renderNavbar = () => {
           </div>
           </div>
      </nav>`;
-     
-     document.querySelectorAll("li.xpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
-     document.querySelectorAll("li.cpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
+     if(getPageName()!="sign-up.html"){
+          document.querySelectorAll("li.xpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
+          document.querySelectorAll("li.cpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
+     }
 };
 
 const renderFooter = () => {
