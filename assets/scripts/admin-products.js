@@ -19,12 +19,11 @@ register.addEventListener("submit", (e)=>{
         reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
-
           const newDestination = {
             title: register.elements["destination"].value,
             date: register.elements["date"].value,
             price: register.elements["price"].value,
-            image: register.elements["image"].value,
+            image: register.elements["image"].files[0].name,
             description: register.elements["description"].value,
         }    
         if( isValid( newDestination) ){
