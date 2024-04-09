@@ -24,16 +24,17 @@ register.addEventListener("submit", (e)=>{
             title: register.elements["destination"].value,
             date: register.elements["date"].value,
             price: register.elements["price"].value,
+            image: register.elements["image"].value,
             description: register.elements["description"].value,
         }    
         if( isValid( newDestination) ){
           writeDestination( newDestination); 
-        }  
           swalWithBootstrapButtons.fire({
             title: "¡Destino Guardado!",
             text: "Tu destino ha sido guardado",
             icon: "success"
           });
+        }  
         } else if (
           result.dismiss === Swal.DismissReason.cancel
         ) {
