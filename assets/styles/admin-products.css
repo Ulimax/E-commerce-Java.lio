@@ -39,3 +39,14 @@ form fieldset {
     margin-top: 10dvh;
     
 }
+
+.namdhinggo-regular {
+    font-family: "Namdhinggo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.blue-title{
+    color: #027B8D;
+}

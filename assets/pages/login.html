@@ -14,22 +14,24 @@
             <section class="formulario">
                 <form  id="register-form">
                 <fieldset class="row g-3">
-                    <legend class="text-center">Creación de nuevo producto</legend>
+                    <h1 class="text-center namdhinggo-regular blue-title">Inicio de sesión</h1>
                     <div class="col-12">
-                    <label for="destination" class="form-label">Nombre de usuario</label>
-                    <input type="text" class="form-control" id="destination">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" min=0 class="form-control" id="email" autocomplete="on" placeholder="correo@correo.com" required>
                     </div>
                     <div class="col-12">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" required>
                     </div>
                 </fieldset>
                     <div class="col-12 text-center mt-3">
-                    <button type="submit" class="btn btn-outline-success">Agregar</button>
+                    <button id="loginBtn" type="submit" class="btn btn-outline-success">Acceder</button>
                     </div>
                 </form>
                 <div id="error-message" class="w-75 h-25"></div>
             </section>
         </main>
+
+        <script src="../scripts/login.js"></script>
     </body>
 </html>

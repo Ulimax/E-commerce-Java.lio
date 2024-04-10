@@ -1,92 +1,103 @@
-const register= document.forms["register-form"];
+const registerForm = document.forms["register-form"];
 const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-      confirmButton: "btn btn-success",
-      cancelButton: "btn btn-danger"
-    },
-    buttonsStyling: false
-  });
-register.addEventListener("submit", (e)=>{
-    e.preventDefault();
-
-    swalWithBootstrapButtons.fire({
-        title: "¿Estás seguro?",
-        text: "¡No podrás revertir esta acción!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonText: "Sí, Guardar!",
-        cancelButtonText: "No, Cancelar!",
-        reverseButtons: true
-      }).then((result) => {
-        if (result.isConfirmed) {
-          const newDestination = {
-            title: register.elements["user"].value,
-            date: register.elements["phone"].value,
-            price: register.elements["email"].value,
-            image: register.elements["password"].value,
-            description: register.elements["password2"].value,
-        }    
-        if( isValid( newDestination) ){
-          writeDestination( newDestination); 
-          swalWithBootstrapButtons.fire({
-            title: "¡Destino Guardado!",
-            text: "Tu destino ha sido guardado",
-            icon: "success"
-          });
-        }  
-        } else if (
-          result.dismiss === Swal.DismissReason.cancel
-        ) {
-          register.reset()
-          swalWithBootstrapButtons.fire({
-            title: "Cancelado",
-            text: "",
-            icon: "error"
-          });
-        }
-      });
-
-   
+  customClass: {
+    confirmButton: "btn btn-success",
+    cancelButton: "btn btn-danger"
+  },
+  buttonsStyling: false
 });
-const isValid = (newDestination)=>{
 
-  // Aqui se llevan acabo las validaciones
-    let valid = true;
-    const message=[];
-    if(!newDestination.title || newDestination.title.length>20){
-        valid = false;
-        message.push("El nombre del destino no es válido, el campo supera los caracteres o está vacío");
+registerForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  swalWithBootstrapButtons.fire({
+    title: "¿Estás seguro?",
+    text: "¡No podrás revertir esta acción!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sí, Guardar!",
+    cancelButtonText: "No, Cancelar!",
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      let userTrim=  registerForm.elements["user"].value.trim();
+      const userData = {
+        user: userTrim,
+        phone: registerForm.elements["phone"].value,
+        email: registerForm.elements["email"].value,
+        password: registerForm.elements["password"].value,
+        password2: registerForm.elements["password2"].value,
+      };
+
+      if (isValid(userData)) {
+        createUser(userData);
+        swalWithBootstrapButtons.fire({
+          title: "Usuario creado",
+          text: "felicidades",
+          icon: "success"
+        });
+      }
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      registerForm.reset();
+      swalWithBootstrapButtons.fire({
+        title: "Cancelado",
+        text: "",
+        icon: "error"
+      });
     }
-    if(newDestination.price<=0){
-        valid = false;
-        message.push("El precio del destino no puede ser negativo");
-    }
-    if(!newDestination.description || newDestination.description.length<100){
-        valid = false;
-        message.push("La longitud mínima de la descripción es de 100 caracteres");
-    }
+  });
+});
 
-    if( ! valid ) showError( message );
-    else showError( [] );
+const isValid = (userData) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let valid = true;
+  const errorMessage = [];
 
-    return valid;
-
-}
-
-const showError= (errorMessage)=>{
-  let alert = "";
-  for (let message of errorMessage ){
-      alert += `
-      <div class="alert alert-danger  align-items-center" role="alert">
-          <p class="text-center">
-          ${message} 
-          </p>
-      </div>`
+  if (!userData.user.trim() || userData.user.length < 3) {
+    valid = false;
+    errorMessage.push("El nombre de usuario es muy corto o está vacío");
   }
-  document.getElementById("error-message").innerHTML= alert;
+
+  if (userData.phone.length !== 10) {
+    valid = false;
+    errorMessage.push("Formato de teléfono inválido");
+  }
+
+  if (!emailRegex.test(userData.email)) {
+    valid = false;
+    errorMessage.push("Formato de correo inválido");
+  }
+
+  if (!userData.password || userData.password.length < 3) {
+    valid = false;
+    errorMessage.push("La contraseña es muy corta o está vacía");
+  }
+
+  if (userData.password !== userData.password2) {
+    valid = false;
+    errorMessage.push("Las contraseñas no coinciden");
+  }
+
+  showError(errorMessage);
+
+  return valid;
 }
 
-const writeDestination = (destiny)=>{
-    const json = JSON.stringify(destiny);
-    console.log(json);
+const showError = (errorMessage) => {
+  let alert = "";
+  for (let message of errorMessage) {
+    alert += `
+      <div class="alert alert-danger  align-items-center" role="alert">
+        <p class="text-center">
+          ${message} 
+        </p>
+      </div>`;
+  }
+  document.getElementById("error-message").innerHTML = alert;
+}
+
+const createUser = (userData) => {
+  const json = JSON.stringify(userData);
+  localStorage.setItem('user', json);
+  console.log(json);
 }

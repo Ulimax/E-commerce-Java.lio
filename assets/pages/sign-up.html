@@ -7,6 +7,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/admin-products.css">
     <link rel="stylesheet" href="../styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Namdhinggo:wght@400;500;600;700;800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <title>Registro de usuario</title>
 </head>
 <body>
@@ -14,22 +17,22 @@
         <section class="formulario mb-5">
             <form  id="register-form">
               <fieldset class="row g-3">
-                <legend class="text-center">Formulario de registro</legend>
+                <h1 class="text-center namdhinggo-regular blue-title">Formulario de registro</h1>
                 <div class="col-md-6">
                   <label for="user" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="user">
+                  <input type="text" class="form-control" id="user" placeholder="Penny" required >
                 </div>
                 <div class="col-md-6">
                   <label for="phone" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="on" required />
+                  <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" autocomplete="on" placeholder="0123456789" required />
                 </div>
                 <div class="col-12">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" min=0 class="form-control" id="email" autocomplete="on">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" min=0 class="form-control" id="email" autocomplete="on" placeholder="correo@correo.com" required>
                 </div>
                 <div class="col-12">
                   <label for="password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="password" accept="image/png, image/jpeg">
+                  <input type="password" class="form-control" id="password" accept="image/png, image/jpeg"  required>
                 </div>
                 <div class="col-12">
                     <label for="password2" class="form-label">Repite la contraseña</label>
