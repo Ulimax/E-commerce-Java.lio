@@ -1,0 +1,72 @@
+:root{
+    --colorPrincipal: #0098B1;
+    --colorSecundario: #027B8D;
+    --colorTexto: #4D3826;
+    --colorFondo: #FAEED2;
+    --colorComplementario: #EBA972;
+    --colorGraficos: #a6e5e6;
+
+}
+
+body{
+   width: 100%;
+   background-color: #FAEED2;
+   text-align: center; 
+   
+}
+
+#hotel{
+    margin-right: 30px;
+    width: 50px;
+    height: 60px;
+}
+
+#beach{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#mountain{
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#tent{
+    margin-right: 30px;
+    width: 50px;
+    height: 70px;
+}
+
+#cabin{
+    
+    width: 50px;
+    height: 50px;
+}
+
+img{
+    max-height: 500px;
+}
+
+
+
+h2{
+    font-family: "Namdhinggo", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Namdhinggo", serif;
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+

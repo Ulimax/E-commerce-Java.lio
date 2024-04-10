@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--beige);
+}
+
+input:hover,
+textarea:hover{
+    border: 1px solid var(--azul_fuerte) ;
+}
+
+#register-form{
+    max-width: 80%;
+    padding: 3rem;
+    border: 2px solid #0Af;
+    border-radius: 2rem;
+    background-color: #fff;
+
+}
+
+form fieldset {
+    border: initial;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  legend {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10dvh;
+    
+}
