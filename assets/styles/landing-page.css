@@ -188,7 +188,7 @@ h2{
 
 
   .imagencarrusel {
-  height: 500px !important;
+  height: 600px !important;
 
    background-repeat: no-repeat;
       background-position: end center; 
@@ -243,4 +243,20 @@ text-shadow: 0 2px 2px #000;
 
 #whatsapp-chat img {
   width: 40px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+header {
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: white !important;
 }

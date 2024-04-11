@@ -50,7 +50,7 @@ body {
   background-image: url("/assets/img/eric.jpeg");
 }
 .cuatro{
-  background-image: url("/assets/img/esquivel.jpeg");
+  background-image: url("/assets/img/ezquivel.jpg");
 }
 
 .cinco{
@@ -131,7 +131,7 @@ body {
 .aboutus-container{
   background-color: #fff;
   padding: 3rem;
-  border: 3rem solid #000;
+  border: 3rem solid var(--colorGraficos);
   border-radius: 3rem;
   display: flex;
   width: 75%;
