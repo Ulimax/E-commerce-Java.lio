@@ -108,7 +108,7 @@ function renderContent() {
 setTimeout(() => {
   renderContent();
   var swiper = new Swiper(".mySwiper", {
-    effect: "flip",
+    effect: "cube",
     grabCursor: true,
     loop: true, // Esto permitirá que el carrusel se repita
     pagination: {
