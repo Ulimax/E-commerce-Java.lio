@@ -13,7 +13,7 @@ const renderContent = () => {
 
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="">
-          <img src="https://i.ibb.co/FgtvN9P/Adobe-Stock-211446611.jpg" class="d-block w-100 imagencarrusel"
+          <img src="/assets/img/carousel/AdobeStock_211446611.jpeg" class="d-block w-100 imagencarrusel"
             alt="Globos aerostáticos en Guanajuato">
           <div class="carousel-caption">
             <h3> <strong>Feria Internacional del Globo</strong> </h3>
@@ -21,7 +21,7 @@ const renderContent = () => {
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="https://i.ibb.co/QXQCSM3/Adobe-Stock-410511672.jpg" class="d-block w-100 imagencarrusel"
+          <img src="/assets/img/carousel/AdobeStock_410511672.jpeg" class="d-block w-100 imagencarrusel"
             alt="Atardecer en Maruata">
           <div class="carousel-caption">
             <h3> <strong>Maruata</strong> </h3>
@@ -37,7 +37,7 @@ const renderContent = () => {
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="https://i.ibb.co/YLsKDZn/Adobe-Stock-499061001.jpg" class="d-block w-100 imagencarrusel"
+          <img src="/assets/img/carousel/_DSC4982.JPG" class="d-block w-100 imagencarrusel"
             alt="Atardecer en el Nevado de Toluca">
           <div class="carousel-caption">
             <h3> <strong> Nevado de Toluca </strong> </h3>
@@ -45,7 +45,7 @@ const renderContent = () => {
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="https://i.ibb.co/sVB3yvs/Adobe-Stock-8679382.jpg" class="d-block w-100 imagencarrusel"
+          <img src="/assets/img/carousel/AdobeStock_8679382.jpeg" class="d-block w-100 imagencarrusel"
             alt="Paracaidismo en Tepoztlan">
           <div class="carousel-caption">
             <h3> <strong> Paracaidismo y Tepoztlán 2° fecha </strong> </h3>
@@ -120,31 +120,20 @@ function displayProducts(products) {
 }
 
 function openModal(product) {
-  document.querySelectorAll(".box").map(box => box.innerHTML += `
-    <div class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>${product.title}</h2>
-                <p>Date: ${product.date}</p>
-                <p>Price: $${product.price}.00</p>
-                <p>Description: ${product.description}</p>
-                
-            </div>
-        </div>
-  `)
-    /* const modalContent = `
+   
+    const modalContent = `
         <div class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>${product.title}</h2>
-                <p>Date: ${product.date}</p>
-                <p>Price: $${product.price}.00</p>
-                <p>Description: ${product.description}</p>
+                <p>Fecha: ${product.date}</p>
+                <p>Precio: $${product.price}.00</p>
+                <p>Descripción: ${product.description}</p>
                 
             </div>
         </div>
     `;
-    document.getElementById('modal-container').innerHTML = modalContent; */
+    document.getElementById('modal-container').innerHTML = modalContent;
 }
 
 function closeModal() {
