@@ -1,4 +1,6 @@
 
+const cart = [];
+ 
 
 async function getData(url) {
     try {
@@ -39,7 +41,7 @@ function openModal(product) {
                 <p>Date: ${product.date}</p>
                 <p>Price: $${product.price}.00</p>
                 <p>Description: ${product.description}</p>
-                <button onclick="addToCart(${JSON.stringify(product)})">Add to Cart</button>
+                
             </div>
         </div>
     `;
@@ -51,18 +53,15 @@ function closeModal() {
 }
 
 function addtocart(product) {  
-    console.log("Added to cart:", product);
-    localStorage.setItem("backpack",cart.push(product));
+    cart.push(product);
+    const json = JSON.stringify(cart);
+    console.log("Added to cart:", cart);
+    localStorage.setItem("backpack",json);
 }
 
-function delElement(index) {    
-    localStorage.setItem("backpack",cart.splice(index, 1));
-}
+
 
 
 
 getData("assets/scripts/landing-page.json");
-
-
- 
   
