@@ -105,6 +105,7 @@ body{
 #root{
     width: 60%;
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   
@@ -149,6 +150,7 @@ body{
     border-radius: 5px;
     padding: 15px;
     height: auto;
+    margin-bottom: 30px;
 }
 .img-box{
     width: 100%;
@@ -345,6 +347,11 @@ header {
     .carousel-caption p {
         font-size: small;
     }
+    #root{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -358,5 +365,10 @@ header {
     
     .carousel-caption p {
         font-size: small;
+    }
+    #root{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 }
