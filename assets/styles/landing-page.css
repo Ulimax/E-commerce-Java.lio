@@ -243,18 +243,24 @@ h2{
 
 /* CARRUSEL */
 
-  .imagencarrusel {
-  height: 700px;
-
-   background-repeat: no-repeat;
-      background-position: end center; 
-  min-height: 300px !important;
+.carousel-item {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/img/carousel/AdobeStock_211446611.jpeg");
 }
-  .carousel-caption h3 strong, .carousel-caption p {
+
+.imagencarrusel {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: end center;
+    min-height: 300px !important;
+    aspect-ratio: 1;
+}
+
+.carousel-caption h3 strong, .carousel-caption p {
 
   color: #EBA972 ;
  
-
   margin-bottom: 35px;
   /* Alinear al fondo */
   /* Alinear a la izquierda */
