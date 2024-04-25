@@ -113,6 +113,10 @@
     background-color: var(--darkturquoise) !important;
 }
 
+.backpack-counter {
+    background-color: var(--darkturquoise);
+}
+
 
 
 .footer-decorator {

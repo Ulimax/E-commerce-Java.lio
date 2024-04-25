@@ -1,107 +1,107 @@
 const getPageName = () => {
-     return window.location.pathname.split("/").pop() ? window.location.pathname.split("/").pop() : "index.html";
-   };
-   
-   /* const renderMisc = () => {
-        document.querySelector("head").innerHTML += `
-        <link rel="icon" href="./assets/icons/logo-planet.png">
-        <link rel="stylesheet" href="./assets/style.css">
-        `;
-   } */
-   
-   const renderNavbar = () => {
-     const pages = ["index.html", "contact-form.html", "about-us.html"];
-   
-     document.querySelector("header").innerHTML = `
-        <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
-        <div class="container-fluid">
-             <a class="navbar-brand ms-2" href="/index.html">
-                  <img src="/assets/icons/logo-planet.png" alt="Logo de Nuevo Mundo Travel" width="60" height="auto" class="d-inline-block">
-             </a>
-             <a class="navbar-brand ms-2 me-auto d-inline-block d-none d-xl-block" id="logo-letras" href="/index.html">
-                  <img src="/assets/icons/logo-letters.png" alt="Logo-letras" width="200" height="auto">
-             </a>
-   
-             
-   
-             <ul class="navbar-nav navbar-text mb-2 ms-auto mb-lg-0 d-flex align-items-center">
-                  <li class="nav-item xpd-nav-item">
-                       <a class="nav-link mx-2 titillium-web-semibold" aria-current="page" href="/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item xpd-nav-item">
-                       <a class="nav-link mx-2 titillium-web-semibold" aria-current="page" href="/assets/pages/contact-form.html">Contáctanos</a>
-                  </li>
-                  <li class="nav-item xpd-nav-item">
-                       <a class="nav-link ms-2 me-3 titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img class="nav-login-i" src="/assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
-                            <img class="nav-login-i" src="/assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
-                       </a>
-                       <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="/assets/pages/login.html">Inicia sesión</a></li>
-                            <li><a class="dropdown-item" href="/assets/pages/sign-up.html">¡Regístrate!</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/assets/pages/login.html">Mis viajes</a></li>
-                       </ul>
-                  </li>
-             </ul>
-             <a href="/assets/pages/cart.html" class="me-2 ms-3">
-                  <img src="/assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
-             </a>
+  return window.location.pathname.split("/").pop() ? window.location.pathname.split("/").pop() : "index.html";
+};
+
+/* const renderMisc = () => {
+     document.querySelector("head").innerHTML += `
+     <link rel="icon" href="./assets/icons/logo-planet.png">
+     <link rel="stylesheet" href="./assets/style.css">
+     `;
+} */
+
+const renderNavbar = () => {
+  const pages = ["index.html", "contact-form.html", "about-us.html"];
+
+  document.querySelector("header").innerHTML = `
+    <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="/index.html">
+          <img src="/assets/icons/logo-planet.png" alt="Logo de Nuevo Mundo Travel" width="60" height="auto" class="d-inline-block">
+        </a>
+        <a class="navbar-brand ms-2 me-auto d-inline-block d-none d-xl-block" id="logo-letras" href="/index.html">
+          <img src="/assets/icons/logo-letters.png" alt="Logo-letras" width="200" height="auto">
+        </a>
+      
+        <ul class="navbar-nav navbar-text mb-2 ms-auto mb-lg-0 d-flex align-items-center">
+          <li class="nav-item xpd-nav-item">
+            <a class="nav-link mx-2 titillium-web-semibold" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item xpd-nav-item">
+            <a class="nav-link mx-2 titillium-web-semibold" aria-current="page" href="/assets/pages/contact-form.html">Contáctanos</a>
+          </li>
+          <li class="nav-item xpd-nav-item">
+            <a class="nav-link ms-2 me-3 titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="nav-login-i" src="/assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
+              <img class="nav-login-i" src="/assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/assets/pages/login.html">Inicia sesión</a></li>
+              <li><a class="dropdown-item" href="/assets/pages/sign-up.html">¡Regístrate!</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/assets/pages/login.html">Mis viajes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="/assets/pages/backpack.html" class="me-2 ms-3">
+          <img src="/assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
+          <span class="xpd-backpack-counter position-absolute top--10 translate-middle badge rounded-pill"></span>
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar bg-body-transparent d-md-none">
+      <div class="container-fluid">
+        <a id="cpd-nav-cart-i" class="navbar-brand ms-2" href="/index.html"><img src="/assets/icons/logo-planet.png" alt="Logo Nuevo Mundo Travel" width="45" height="auto">
+        <a href="/assets/pages/backpack.html" class="me-1">
+          <img src="/assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
+          <span class="cpd-backpack-counter position-absolute top--10 translate-middle badge rounded-pill"></span>  
+        </a>
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="/assets/icons/logo-letters.png" alt="Letras nuevo mundo travel" width="200" height="me-auto">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item cpd-nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item cpd-nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/contact-form.html">Contáctanos</a>
+              </li>
+              <li class="nav-item cpd-nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
+              </li>
+              <hr class="border bg-dark-subtle border-2 opacity-50">
+              <li class="nav-item cpd-nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/login.html" >Inicia sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/sign-up.html" >¡Regístrate!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Mis viajes</a>
+              </li>
+              <hr class="border bg-dark-subtle border-2 opacity-50">
+            </ul>   
+          </div>
         </div>
-        </nav>
-        <nav class="navbar bg-body-transparent d-md-none">
-             <div class="container-fluid">
-                  <a id="cpd-nav-cart-i" class="navbar-brand ms-2" href="/index.html"><img src="/assets/icons/logo-planet.png" alt="Logo Nuevo Mundo Travel" width="45" height="auto">
-                  <a href="/assets/pages/cart.html" class="me-1"> <img src="/assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto"></a>
-                  <button class="navbar-toggler mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                       <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                 <img src="/assets/icons/logo-letters.png" alt="Letras nuevo mundo travel" width="200" height="me-auto">
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                       </div>
-                       <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                 <li class="nav-item cpd-nav-item">
-                                      <a class="nav-link active titillium-web-semibold" aria-current="page" href="/index.html">Inicio</a>
-                                 </li>
-                                 <li class="nav-item cpd-nav-item">
-                                      <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/contact-form.html">Contáctanos</a>
-                                 </li>
-                            <li class="nav-item cpd-nav-item">
-                                 <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
-                            </li>
-                            <hr class="border bg-dark-subtle border-2 opacity-50">
-                            <li class="nav-item cpd-nav-item">
-                                 <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/login.html" >Inicia sesión</a>
-                            </li>
-                            <li class="nav-item">
-                                 <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/sign-up.html" >¡Regístrate!</a>
-                            </li>
-                            <li class="nav-item">
-                                 <a class="nav-link active titillium-web-semibold" aria-current="page" href="#">Mis viajes</a>
-                            </li>
-                            <hr class="border bg-dark-subtle border-2 opacity-50">
-                       </ul>
-                       
-                  </div>
-             </div>
-             </div>
-        </nav>`;
-   
-     document.querySelectorAll("li.xpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
-     document.querySelectorAll("li.cpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
-   };
-   
-   const renderFooter = () => {
-     document.querySelector("footer").innerHTML = `
+      </div>
+    </nav>`;
+
+  document.querySelectorAll("li.xpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
+  document.querySelectorAll("li.cpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
+};
+
+const renderFooter = () => {
+  document.querySelector("footer").innerHTML = `
        <div class="footer-decorator"></div>
         <div class="container-fluid footer d-flex flex-column titillium-web-semibold">
              <div class="mt-4">
@@ -150,20 +150,20 @@ const getPageName = () => {
              </div>
            </div>
      `;
-   };
-   
-   const includeLinks = () => {
-     document.head.innerHTML += `
+};
+
+const includeLinks = () => {
+  document.head.innerHTML += `
        <link rel="icon" href="/assets/icons/logo-planet.png">
        <link rel="stylesheet" href="/assets/styles/default.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
      `;
-   };
-   
-   const renderFirstLoading = () => {
-     document.body.innerHTML += `
+};
+
+const renderFirstLoading = () => {
+  document.body.innerHTML += `
      <div id="loading-label">
        <figure id="loading">
          <img id="loading-static" src="/assets/icons/loading-label.png" alt="">
@@ -171,16 +171,15 @@ const getPageName = () => {
        </figure>
      </div>
      `;
-     setTimeout(() => document.querySelector("#loading-label").classList.add("d-none"), 2000);
-   };
-   
-   const mainRender = (function () {
-     if (!sessionStorage.getItem("session"))
-       renderFirstLoading();
-     sessionStorage.setItem("session", "active");
-     includeLinks();
-     renderNavbar();
-     document.getElementsByClassName("nav-login-i")[Math.round(Math.random())].style.display = "inline-block";
-     renderFooter();
-   }());
-   
+  setTimeout(() => document.querySelector("#loading-label").classList.add("d-none"), 2000);
+};
+
+const mainRender = (function () {
+  if (!sessionStorage.getItem("session"))
+    renderFirstLoading();
+  sessionStorage.setItem("session", "active");
+  includeLinks();
+  renderNavbar();
+  document.getElementsByClassName("nav-login-i")[Math.round(Math.random())].style.display = "inline-block";
+  renderFooter();
+}());
