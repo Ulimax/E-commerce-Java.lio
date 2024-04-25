@@ -13,12 +13,11 @@ textarea:hover{
 }
 
 #register-form{
-    max-width: 80%;
+    max-width: 95%;
     padding: 3rem;
     border: 2px solid #0Af;
     border-radius: 2rem;
     background-color: #fff;
-
 }
 
 form fieldset {
@@ -37,7 +36,7 @@ form fieldset {
     flex-direction: column;
     align-items: center;
     margin-top: 10dvh;
-    
+    margin: auto;
 }
 
 .namdhinggo-regular {
@@ -49,4 +48,23 @@ form fieldset {
 
 .blue-title{
     color: #027B8D;
+}
+
+.form-div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-image{
+    max-width: 50%;
+    max-height: 100vh;
+    left:0px;
+    
+}
+
+
+@media  (max-width:426px){
+    .form-image{
+        width: 0;
+    }
 }

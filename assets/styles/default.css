@@ -113,10 +113,22 @@
     background-color: var(--darkturquoise) !important;
 }
 
-.backpack-counter {
+.xpd-backpack-counter {
     background-color: var(--darkturquoise);
 }
 
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--darkturquoise);
+    --bs-popover-bg: var(--darkturquoise) !important;
+    --bs-popover-body-color: white;
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: small;
+}
 
 
 .footer-decorator {

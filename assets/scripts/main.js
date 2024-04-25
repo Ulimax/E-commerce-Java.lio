@@ -11,6 +11,7 @@ const getPageName = () => {
 
 const renderNavbar = () => {
   const pages = ["index.html", "contact-form.html", "about-us.html"];
+  backpackCounter = localStorage.getItem("backpack") ? JSON.parse(localStorage.getItem("backpack")).length ? JSON.parse(localStorage.getItem("backpack")).length : "": "";
 
   document.querySelector("header").innerHTML = `
     <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
@@ -32,7 +33,7 @@ const renderNavbar = () => {
           <li class="nav-item xpd-nav-item">
             <a class="nav-link ms-2 me-3 titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown"  data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left" data-bs-custom-class="custom-popover" data-bs-content="Acceso de usuarios">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="nav-login-i" src="/assets/icons/login-female-woods.png" height="auto" width="25" alt="icono de login">
               <img class="nav-login-i" src="/assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
@@ -45,9 +46,9 @@ const renderNavbar = () => {
             </ul>
           </li>
         </ul>
-        <a href="/assets/pages/backpack.html" class="me-2 ms-3">
+        <a href="/assets/pages/backpack.html" class="me-2 ms-3" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-content="Mochila de compras">
           <img src="/assets/icons/backpack.png" alt="icono mochila" width="35" height="me-auto">
-          <span class="xpd-backpack-counter position-absolute top--10 translate-middle badge rounded-pill"></span>
+          <span class="xpd-backpack-counter position-absolute top--10 translate-middle badge rounded-pill">${backpackCounter}</span>
         </a>
       </div>
     </nav>
@@ -183,3 +184,6 @@ const mainRender = (function () {
   document.getElementsByClassName("nav-login-i")[Math.round(Math.random())].style.display = "inline-block";
   renderFooter();
 }());
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(triggerElement => new bootstrap.Popover(triggerElement));
