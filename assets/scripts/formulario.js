@@ -1,42 +1,45 @@
 const renderContent = () => {
   document.querySelector("main").innerHTML = `
   <section>
-    <h1 class="text-center">Contáctanos</h1>
+    
+<div class="d-flex d-column justify-content-center">  
 <form id="register-form" action="https://formsubmit.co/a503a2c1d64d1164944b46206fa8b9ba" onsubmit="return validateForm()"  method="POST" >
-<div class="container rounded-4 backgroundform">
+<div class="container rounded-4 backgroundform ">
+  
     <fieldset>
-
+      <h1 class="title-form ">Contáctanos</h1>
         <div class="row">
-            <label for="name" class="form-label m-2 col-sm fw-bold">
+            <label for="name" class="form-label m-2 col-sm text-start">
                 Nombre
-            <input id="name" name="name" type="text" class="form-control borderform" required placeholder="Esquivel" /></label>
+            <input id="name" name="name" type="text" class="form-control " required placeholder="Esquivel" /></label>
 
-            <label for="email" class="form-label m-2 col-sm fw-bold">
+            <label for="email" class="form-label m-2 col-sm text-start">
                 Correo electrónico
-            <input id="email" name="email" type="email" class="form-control borderform" required placeholder="correo@correo.com"/></label>
+            <input id="email" name="email" type="email" class="form-control " required placeholder="correo@correo.com"/></label>
         </div>
 
         <div class="row">
-            <label for="telephone" class="form-label m-2 col-sm fw-bold">
+            <label for="telephone" class="form-label m-2 col-sm text-start">
                 Teléfono
-            <input id="telephone" name="telephone" type="text" class="form-control borderform" pattern="[0-9]{10}" required placeholder="0123456789"/></label>
+            <input id="telephone" name="telephone" type="text" class="form-control " pattern="[0-9]{10}" required placeholder="0123456789"/></label>
 
-            <label for="about" class="form-label m-2 col-sm fw-bold">
+            <label for="about" class="form-label m-2 col-sm text-start">
                 Asunto
-            <input id="about" name="about" type="text" class="form-control borderform" required placeholder="Asunto"/></label>
+            <input id="about" name="about" type="text" class="form-control " required placeholder="Asunto"/></label>
         </div>
 
         <div class="row">
-            <label for="comment" class="form-label m-2 col fw-bold">
+            <label for="comment" class="form-label m-2 col text-start">
                 Comentario
-            <textarea id="comment" name="comment" type="text" class="form-control borderform" rows="3" required placeholder="Escribe un comentario"></textarea></label>
+            <textarea id="comment" name="comment" type="text" class="form-control " rows="3" required placeholder="Escribe un comentario"></textarea></label>
         </div>
 
         <div class="row-2 text-center m-2">
-            <button type="submit" value="Submit" class="btn buttonform"> Enviar </button>
+            <button type="submit" value="Submit" class="btn btn-outline-success"> Enviar </button>
         </div>
 
     </fieldset>
+    </div>  
 </div>
 </form>
 <div class="container d-none d-sm-block">
