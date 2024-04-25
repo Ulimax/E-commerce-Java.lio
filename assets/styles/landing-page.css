@@ -1,14 +1,21 @@
+
+/* PRODUCT LIST    */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: small;
     font-size: 15px;
     
 }
 
 body{
     background-color: #faeed2;
+
 }
 
 .products-container{
@@ -49,6 +56,46 @@ body{
     color: #027B8D;
 }
 
+/* Modal */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(0, 0, 0, 75%); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 60%;
+    background-color: #faeed2;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid #027B8D;
+   /* width: 80%;  Could be more or less, depending on screen size */
+}
+
+.modal-button{
+    background-color: #027B8D!important;
+}
+.close {
+    color: #027B8D;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #a6e5e6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .container{
     display: flex;
     width: 90%;
@@ -63,13 +110,18 @@ body{
   
     
 }
+.backpackbody{
+    display: flex;
+    justify-content: center;
+}
 .sidebar{
-    width: 40%;
+    width: 90%;
     border-radius: 5px;
     background-color: #a6e5e6;
     margin-left: 20px;
     padding: 15px;
     text-align: center;
+    
 }
 .head{
     background-color: #027B8D;
@@ -141,6 +193,7 @@ h2{
 .bottom button:hover{
     background-color: #a6e5e6;
 }
+
 .cart p{
     height: 22px;
     width: 22px;
@@ -185,24 +238,24 @@ h2{
 
 
 
-
+/* CARRUSEL */
 
   .imagencarrusel {
-  height: 500px !important;
+  height: 700px;
 
    background-repeat: no-repeat;
       background-position: end center; 
   min-height: 300px !important;
 }
-  .carousel-caption h3, .carousel-caption p {
+  .carousel-caption h3 strong, .carousel-caption p {
 
   color: #EBA972 ;
-  text-shadow: 0 2px 2px #000;
-  
+ 
+
   margin-bottom: 35px;
   /* Alinear al fondo */
   /* Alinear a la izquierda */
-  width: 100%;
+  
   /* Ancho total */
   padding: 0px;
   /* Espaciado interno */
@@ -210,6 +263,14 @@ h2{
   text-align: center;
 
 }
+
+.carousel-caption h3 strong {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #EBA972 ;
+    background: linear-gradient(0.25turn, transparent 5%, rgba(0,0,0,50%) 90%, transparent 100%);
+    /* background-color: rgba(0,0,0,32% ); */
+ }
 
 .carousel-caption p
 {
@@ -228,7 +289,7 @@ text-shadow: 0 2px 2px #000;
   display: block;
   width: 60px;
   height: 60px;
-  background-color: white;
+  background-color: #25D366;
   border-radius: 60%;
   text-align: center;
   line-height: 55px;
@@ -238,9 +299,22 @@ text-shadow: 0 2px 2px #000;
 }
 
 #whatsapp-chat a:hover {
-  background-color: #128c7e;
+  background-color: #128C7E;
 }
 
 #whatsapp-chat img {
   width: 40px;
+  
+}
+
+main {
+    margin-top: 50px;
+}
+
+header {
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
