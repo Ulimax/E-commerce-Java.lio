@@ -48,6 +48,44 @@ body{
     color: #027B8D;
 }
 
+/* Modal */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(0, 0, 0, 75%); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 60%;
+    background-color: #faeed2;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid #027B8D;
+   /* width: 80%;  Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: #027B8D;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #a6e5e6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .container{
     display: flex;
     width: 90%;
@@ -140,6 +178,7 @@ button{
 button:hover{
     background-color: #a6e5e6;
 }
+
 .cart p{
     height: 22px;
     width: 22px;
