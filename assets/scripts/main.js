@@ -133,9 +133,8 @@ const renderFooter = () => {
                   </div>
                </div>
                <div class="ftr-section d-flex flex-column col-12 col-md-4 my-4 p-4 text-light rounded-3">
-                 <a href="/assets/pages/privacy-policy.html">Política de privacidad</a>
-                 <a href="/assets/pages/privacy-policy.html">Aviso legal</a>
-                 <a href="/assets/pages/privacy-policy.html">Cookies</a>
+                 <a href="/assets/pages/notice-of-privacy.html">Aviso de Privacidad</a>
+                 <a href="/assets/pages/terms-and-conditions.html">Términos y Condiciones</a>
                  <span class="mt-4">Impulsado por</span>
                  <a class="mt-4" href="https://mexico.generation.org/">
                  <img src="/assets/icons/generation-logo-white.svg" width="120px" class="mb-4" height="auto" alt="Logo Generation"></a>
