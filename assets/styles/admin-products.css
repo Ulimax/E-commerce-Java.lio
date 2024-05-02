@@ -92,6 +92,7 @@ form fieldset {
     border: solid 1px #027B8D;
 }
 
+
 @media  (max-width:426px){
     .form-image{
         width: 0;
