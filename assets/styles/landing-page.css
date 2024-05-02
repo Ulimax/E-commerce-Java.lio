@@ -243,18 +243,46 @@ h2{
 
 /* CARRUSEL */
 
-.carousel-item {
+.carousel-item-1 {
     width: 100%;
     background-size: cover;
     background-image: url("/assets/img/carousel/AdobeStock_211446611.jpeg");
+    background-position: center;
+}
+
+.carousel-item-2 {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/img/carousel/AdobeStock_410511672.jpeg");
+    background-position: center;
+}
+
+.carousel-item-3 {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/img/carousel/_DSC4982.JPG");
+    background-position: center;
+}
+
+.carousel-item-4 {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/img/carousel/AdobeStock_499061001.jpeg");
+    background-position: center;
+}
+
+.carousel-item-5 {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/assets/img/carousel/AdobeStock_8679382.jpeg");
+    background-position: center;
 }
 
 .imagencarrusel {
-    height: 700px;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: end center;
     min-height: 300px !important;
-    aspect-ratio: 1;
 }
 
 .carousel-caption h3 strong, .carousel-caption p {
@@ -290,7 +318,7 @@ text-shadow: 0 2px 2px #000;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 2;
 }
 
 #whatsapp-chat a {
@@ -315,6 +343,18 @@ text-shadow: 0 2px 2px #000;
   
 }
 
+/* .carousel-control-prev-icon-bg {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+.carousel-control-next-icon-bg{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+} */
+
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+    filter: invert(100%) !important;
+    z-index: 1;
+}
+
 main {
     margin-top: 50px;
 }
@@ -325,6 +365,13 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+@media screen and (max-width: 1400px) {
+    .imagencarrusel {
+        height: 700px;
+        min-height: 700px !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
