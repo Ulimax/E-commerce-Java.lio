@@ -4,18 +4,14 @@ body {
     background: var(--beige) !important;
 }
 
-.container-fluid {
-    display: flex;
-    width: 90%;
-    margin-bottom: 30px;
+.fa-solid {
+    color: var(--darkturquoise);
 }
 
-.fa-solid{
-    color: #027B8D;
-}
 .row {
     width: 90%;
 }
+
 .cart {
     display: flex;
     justify-content: space-between;
@@ -161,15 +157,33 @@ h2{
     color: #4d3b21;
 }
 
-.progress-bar {
+.progress-bar-1 {
     width: 0%;
-    background-color: var(--skyblue) !important;
-    animation: 1s forwards ease-out increase;
+    background-color: #0AF !important;
+    animation: 1s forwards ease-out increase-one-third;
 }
 
-@keyframes increase {
+.progress-bar-2 {
+    width: 33.33%;
+    background-color: #0AF !important;
+    animation: 1s forwards ease-out increase-two-thirds;
+}
+
+@keyframes increase-two-thirds {
+    to {
+        width: 66.66%;
+    }
+}
+
+@keyframes increase-one-third {
+    to {
+        width: 33.33%;
+    }
+}
+
+@keyframes decrease-one-third {
     from {
-        width: 0%;
+        width: 66.66%;
     }
     to {
         width: 33.33%;

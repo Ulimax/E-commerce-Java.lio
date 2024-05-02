@@ -9,7 +9,7 @@ body{
 
 input:hover,
 textarea:hover{
-    border: 1px solid var(--azul_fuerte) ;
+    border: 1px solid var(--darkturquoise) ;
 }
 
 #register-form{
@@ -60,6 +60,36 @@ form fieldset {
     max-height: 100vh;
     left:0px;
     
+}
+
+.link{
+    margin:10px;
+}
+
+.link p{
+    text-align: right;
+}
+
+.link a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover{
+    color:#027B8D;
+    cursor: pointer;
+}
+
+.boton{
+   border: solid 1px #027B8D;
+   color: #027B8D;
+}
+
+.boton:hover{
+    color: white;
+    background-color:#027B8D ;
+    border: solid 1px #027B8D;
 }
 
 

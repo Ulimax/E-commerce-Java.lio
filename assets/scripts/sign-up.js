@@ -27,6 +27,9 @@ registerForm.addEventListener("submit", (e) => {
         email: registerForm.elements["email"].value,
         password: registerForm.elements["password"].value,
         password2: registerForm.elements["password2"].value,
+        role: {
+          name: "customer"
+        }
       };
 
       if (isValid(userData)) {

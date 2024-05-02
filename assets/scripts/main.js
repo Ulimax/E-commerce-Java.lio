@@ -3,7 +3,7 @@ const getPageName = () => {
 };
 
 const renderNavbar = () => {
-  const pages = ["index.html", "contact-form.html", "about-us.html"];
+  const pages = ["index.html", "contact-form.html", "about-us.html", "log-in.html", "sign-up.html", "admin-posts.html"];
   const backpackCounter = localStorage.getItem("backpack") ? JSON.parse(localStorage.getItem("backpack")).length ? JSON.parse(localStorage.getItem("backpack")).length : "": "";
 
   document.querySelector("header").innerHTML = `
@@ -32,8 +32,10 @@ const renderNavbar = () => {
               <img class="nav-login-i" src="/assets/icons/login-male-woods.png" height="auto" width="25" alt="icono de login">
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="/assets/pages/log-in.html">Iniciar sesión</a></li>
-              <li><a class="dropdown-item" href="/assets/pages/sign-up.html">¡Regístrate!</a></li>
+              <li class="xpd-nav-item"><a class="dropdown-item dropdown-user-item" href="/assets/pages/log-in.html">Iniciar sesión</a></li>
+              <li class="xpd-nav-item"><a class="dropdown-item dropdown-user-item" href="/assets/pages/sign-up.html">¡Regístrate!</a></li>
+              <li class="xpd-nav-item"><a class="dropdown-item dropdown-admin-item d-none" href="/assets/pages/admin-posts.html">Agregar publicación</a></li>
+              <li><a class="dropdown-item dropdown-user-item d-none" href="${window.location.href}">Cerrar sesión</a></li>
             </ul>
           </li>
         </ul>
@@ -72,19 +74,37 @@ const renderNavbar = () => {
                 <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/about-us.html">Acerca de nosotros</a>
               </li>
               <hr class="border bg-dark-subtle border-2 opacity-50">
-              <li class="nav-item cpd-nav-item">
-                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/log-in.html" >Iniciar sesión</a>
+              <li class="nav-item cpd-nav-item offcanvas-user-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/log-in.html">Iniciar sesión</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/sign-up.html" >¡Regístrate!</a>
+              <li class="nav-item cpd-nav-item offcanvas-user-item">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/sign-up.html">¡Regístrate!</a>
+              </li>
+              <li class="nav-item cpd-nav-item offcanvas-admin-item d-none">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="/assets/pages/log-in.html">Agregar publicación</a>
+              </li>
+              <li class="nav-item offcanvas-user-item d-none">
+                <a class="nav-link active titillium-web-semibold" aria-current="page" href="${window.location.href}">Cerrar sesión</a>
               </li>
               <hr class="border bg-dark-subtle border-2 opacity-50">
             </ul>   
           </div>
         </div>
       </div>
-    </nav>`;
-
+    </nav>
+  `;
+  if (localStorage.getItem("account")) {
+    const dropdownItems = document.querySelectorAll(".dropdown-user-item");
+    document.querySelector(".dropdown-admin-item").classList.toggle("d-none", getUserRole() !== "admin");
+    for (const item of dropdownItems) {
+      item.classList.toggle("d-none");
+    }
+    const offcanvasItems = document.querySelectorAll(".offcanvas-user-item");
+    document.querySelector(".offcanvas-admin-item").classList.toggle("d-none", getUserRole() !== "admin")
+    for (const item of offcanvasItems) {
+      item.classList.toggle("d-none");
+    }
+  }
   document.querySelectorAll("li.xpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
   document.querySelectorAll("li.cpd-nav-item > a")[pages.indexOf(getPageName())].classList.add("disabled");
 };
@@ -121,8 +141,8 @@ const renderFooter = () => {
             </div>
           </div>
           <div class="ftr-section d-flex flex-column col-12 col-md-4 my-4 p-4 text-light rounded-3">
-            <a href="/assets/pages/privacy-policy.html">Política de privacidad</a>
-            <a href="/assets/pages/privacy-policy.html">Aviso legal</a>
+            <a href="/assets/pages/terms-and-conditions.html">Términos y condiciones</a>
+            <a href="/assets/pages/notice-of-privacy.html">Aviso legal</a>
             <span class="mt-4">Impulsado por</span>
             <a class="mt-4" href="https://mexico.generation.org/" target="_blank">
               <img src="/assets/icons/generation-logo-white.svg" width="120px" class="mb-4" height="auto" alt="Logo Generation">
@@ -146,6 +166,7 @@ const includeLinks = () => {
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Namdhinggo:wght@400;500;600;700;800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="/assets/styles/default.css">
        <link rel="stylesheet" href="/assets/styles/main.css">
      `;
@@ -172,6 +193,19 @@ const mainRender = (function () {
   document.getElementsByClassName("nav-login-i")[Math.round(Math.random())].style.display = "inline-block";
   renderFooter();
 }());
+
+function getUserRole() {
+  const user = JSON.parse(localStorage.getItem("user"));
+  return user.role.name;
+}
+
+document.querySelectorAll(".dropdown-user-item")[2].addEventListener("click", event => {
+  localStorage.removeItem("account");
+});
+
+document.querySelectorAll(".offcanvas-user-item")[2].addEventListener("click", event => {
+  localStorage.removeItem("account");
+});
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 const popoverList = [...popoverTriggerList].map(triggerElement => new bootstrap.Popover(triggerElement));
