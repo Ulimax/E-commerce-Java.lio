@@ -106,4 +106,4 @@ function addtocart(product) {
   });
 }
 
-getData("http://127.0.0.1:8080/api/v1/posts");
+getData("/assets/scripts/landing-page.json");
