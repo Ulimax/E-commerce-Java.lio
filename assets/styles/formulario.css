@@ -37,9 +37,9 @@
 .boton{
     border: solid 1px #027B8D !important ;
     color: #027B8D !important ;
- }
+}
 
- .boton:hover{
+.boton:hover ,.boton:active{
     color: white !important ;
     background-color:#027B8D !important ;
     border: solid 1px #027B8D !important ;

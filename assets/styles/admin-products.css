@@ -47,7 +47,7 @@ form fieldset {
 
 
 .blue-title{
-    color: #027B8D;
+    color: #4D3826;
 }
 
 .form-div{
@@ -59,7 +59,9 @@ form fieldset {
     max-width: 50%;
     max-height: 100vh;
     left:0px;
-    
+    margin-left: 35px;
+    border-radius: 20px;
+    z-index: -1;
 }
 
 .link{
@@ -86,15 +88,27 @@ form fieldset {
    color: #027B8D;
 }
 
-.boton:hover{
-    color: white;
-    background-color:#027B8D ;
-    border: solid 1px #027B8D;
+.boton:hover, .boton:active{
+    color: white !important;
+    background-color:#027B8D  !important;
+    border: solid 1px #027B8D !important;
 }
 
 
-@media  (max-width:426px){
+@media  (max-width:600px){
     .form-image{
         width: 0;
+    }
+
+    .link{
+        align-items: center;
+    }
+
+    .link p{
+        text-align: center;
+    }
+
+    .link a{
+        text-align: center;
     }
 }

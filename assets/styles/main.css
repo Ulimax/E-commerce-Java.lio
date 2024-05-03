@@ -211,3 +211,11 @@ footer .row {
         background-size: 100%;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
