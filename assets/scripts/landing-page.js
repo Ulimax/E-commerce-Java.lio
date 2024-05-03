@@ -2,6 +2,7 @@ async function getData(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
+    localStorage.setItem("posts", JSON.stringify(data));
 
     displayProducts(data);
   } catch (error) {
@@ -13,11 +14,11 @@ function displayProducts(products) {
   const productHtml = products.map(product => `
         <div class='box'>
             <div class='img-box'>
-                <img class='images' src=${product.image}></img>
+                <img class='images' src=${product.image.url}></img>
             </div>
             <div class='bottom'>
-                <p>${product.title}</p>
-                <p>${product.date}</p>
+                <p>${product.image.alt}</p>
+                <p>${product.departureDate}</p>
                 <h2>$${product.price}.00 MXN</h2>
                 <button onclick='addtocart(${JSON.stringify(product)})'> Añadir a la mochila</button>
                 <button onclick='openModal(${JSON.stringify(product)})'>Más detalles</button>
@@ -33,19 +34,23 @@ function openModal(product) {
     <div class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h2>${product.title}</h2>
+        <h2>${product.image.alt}</h2>
         <p> Precio: $${product.price}.00 MXN</p>
         <ul> ⭐Descripción: ${product.description}
           <li> 📆Fecha de Salida: ${product.departureDate}</li>
           <li> 📆Fecha de llegada: ${product.returnDate}</li>
           <li> Punto de partida: 
           <ul>
-            <li>${product.departurePoint1}</li>
-            <li>${product.departurePoint2}</li>
-            <li>${product.departurePoint3}</li>
+            <li>${product.departureSite}</li>
           </ul>
           </li>
-          <li> Incluye: 
+          <li> Lugares disponibles: ${product.spots}</li>
+        </ul>
+      </div>
+    </div>
+  `;
+  /*
+  <li> Incluye: 
             <ul>
               <li> ${product.amenity1} </li>
               <li> ${product.amenity2} </li>
@@ -54,11 +59,7 @@ function openModal(product) {
               <li> ${product.amenity5} </li>
             </ul>
           </li>
-          <li> Lugares disponibles: ${product.availableSpots}</li>
-        </ul>
-      </div>
-    </div>
-  `;
+  */
   document.getElementById('modal-container').innerHTML = modalContent;
 }
 
@@ -105,4 +106,4 @@ function addtocart(product) {
   });
 }
 
-getData("assets/scripts/landing-page.json");
+getData("http://127.0.0.1:8080/api/v1/posts");
