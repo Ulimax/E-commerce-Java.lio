@@ -1,0 +1,1 @@
+{"reservations":[2,3],"user":{"fullName":"nombre","email":"email","telephone":"telefono"},"post":[{"name":"nombre","date1":"fecha1","date2":"fecha2","price":1500,"destination":{"name":"nombre"}},{"name":"nombre","date1":"fecha1","date2":"fecha2","price":1800,"destination":{"name":"nombre"}}]}
