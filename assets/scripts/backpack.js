@@ -8,7 +8,7 @@ function displayCart() {
 				<div class='row-img mochila1'>
 					<img class='rowimg' src=${item.image.url}>
 				</div>
-				<p style='font-size:12px;' class='mochila2'>${item.image.alt}</p>
+				<p style='font-size:12px;' class='mochila2'>${item.image.alt} (${JSON.parse(localStorage.getItem("backpack")).reservations[index]})</p>
 				<h2 style='font-size: 12px;' class='mochila3'>MXN$ ${item.price}.00</h2>
 				<i class='fa-solid fa-trash mochila4' onclick='delElement(${index})'></i>
 			</div>
@@ -24,7 +24,6 @@ function displayCart() {
 		document.querySelector(".cart-item").innerHTML = "Tu mochila está vacía";
 	}
 	
-	//<p style='font-size:12px;'>${cart.reservations[index]}</p>
 }
 
 if (document.referrer.slice(-21, -5) === "reservation-form") {
@@ -34,8 +33,11 @@ if (document.referrer.slice(-21, -5) === "reservation-form") {
 displayCart();
 
 function delElement(index) {
-	const cart = JSON.parse(localStorage.getItem("backpack")).post.splice(index, 1);
-	const reservations = JSON.parse(localStorage.getItem("backpack")).reservations.splice(index, 1);
+	const cart = JSON.parse(localStorage.getItem("backpack")).post;
+	cart.splice(index, 1);
+	const reservations = JSON.parse(localStorage.getItem("backpack")).reservations;
+	reservations.splice(index, 1);
+	console.log(JSON.parse(localStorage.getItem("backpack")).post);
 	const json = JSON.stringify({
     "reservations": reservations,
     "user": {
