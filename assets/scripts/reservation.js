@@ -32,6 +32,18 @@ registerForm.addEventListener("submit", (e) => {
 
       if (isValid(userData)) {
         createUser(userData);
+        const cart = JSON.parse(localStorage.getItem("backpack")).post;
+        const reservations = JSON.parse(localStorage.getItem("backpack")).reservations;
+        const json = JSON.stringify({
+          "reservations": reservations,
+          "user": {
+            "fullName": userData.user,
+            "email": userData.email,
+            "telephone": userData.telephone
+          },
+          "post": cart
+        });
+        localStorage.setItem("backpack", json);
         window.location.href = "/assets/pages/printreceipt.html"
         swalWithBootstrapButtons.fire({
           title: "Usuario creado",
