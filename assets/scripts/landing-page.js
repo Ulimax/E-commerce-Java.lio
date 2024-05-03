@@ -35,7 +35,7 @@ function openModal(product) {
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>${product.title}</h2>
                
-                <p> Precio: $${product.price}.00</p>
+                <p> Precio: MXN $${product.price}.00</p>
                 <ul> ⭐Descripción: ${product.description}
                 <li> 📆Fecha de Salida: ${product.departureDate}</li>
                 <li> 📆Fecha de llegada: ${product.returnDate}</li>
