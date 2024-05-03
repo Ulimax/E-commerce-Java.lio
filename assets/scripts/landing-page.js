@@ -2,6 +2,7 @@ async function getData(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
+    localStorage.setItem("posts", JSON.stringify(data));
 
     displayProducts(data);
   } catch (error) {
