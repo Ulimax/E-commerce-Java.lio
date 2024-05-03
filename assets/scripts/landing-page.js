@@ -18,7 +18,7 @@ function displayProducts(products) {
             <div class='bottom'>
                 <p>${product.title}</p>
                 <p>${product.date}</p>
-                <h2>MXN$ ${product.price}.00</h2>
+                <h2>$${product.price}.00 MXN</h2>
                 <button onclick='addtocart(${JSON.stringify(product)})'> Añadir a la mochila</button>
                 <button onclick='openModal(${JSON.stringify(product)})'>Más detalles</button>
             </div>
@@ -35,7 +35,7 @@ function openModal(product) {
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>${product.title}</h2>
                
-                <p> Precio: MXN $${product.price}.00</p>
+                <p> Precio: $${product.price}.00 MXN</p>
                 <ul> ⭐Descripción: ${product.description}
                 <li> 📆Fecha de Salida: ${product.departureDate}</li>
                 <li> 📆Fecha de llegada: ${product.returnDate}</li>
