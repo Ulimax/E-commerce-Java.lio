@@ -26,21 +26,41 @@
     display:block;
 }
 
-#register-form{
+ #register-form{
     max-width: 90%;
-    padding: 3rem;
-    border: 2px solid #0Af;
+    padding: 2rem;
+    border: 4px solid #0Af !important;
     border-radius: 2rem;
     background-color: #fff;
-}
+} 
+
 
 .boton{
     border: solid 1px #027B8D !important ;
     color: #027B8D !important ;
- }
+}
 
- .boton:hover{
+.boton:hover ,.boton:active{
     color: white !important ;
     background-color:#027B8D !important ;
     border: solid 1px #027B8D !important ;
+}
+
+.form-div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-image{
+    max-width: 50%;
+    max-height: 100vh;
+    left:0px;
+    margin-left: 35px;
+    border-radius: 20px;
+}
+
+@media  (max-width:800px){
+    .form-image{
+        width: 0;
+    }
 }

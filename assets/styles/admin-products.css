@@ -1,21 +1,24 @@
 html{
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
-body{
-    background-color: var(--beige);
+body{ 
+    background-color: var(--beige) !important;
+}
+
+#register-form { 
+    background-color: var(--beige) !important;
 }
 
 input:hover,
 textarea:hover{
-    border: 1px solid var(--darkturquoise) ;
+    border: 1px solid var(--darkturquoise);
 }
 
 #register-form{
     max-width: 95%;
     padding: 3rem;
-    border: 2px solid #0Af;
+    border: 4px solid #0Af;
     border-radius: 2rem;
     background-color: #fff;
 }
@@ -47,7 +50,7 @@ form fieldset {
 
 
 .blue-title{
-    color: #027B8D;
+    color: #4D3826;
 }
 
 .form-div{
@@ -59,7 +62,8 @@ form fieldset {
     max-width: 50%;
     max-height: 100vh;
     left:0px;
-    
+    margin-left: 35px;
+    border-radius: 20px;
 }
 
 .link{
@@ -70,31 +74,55 @@ form fieldset {
     text-align: right;
 }
 
-.link a{
+.link a, .conditions {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
 }
 
-.link a:hover{
+.link a:hover, .conditions:hover {
     color:#027B8D;
     cursor: pointer;
 }
 
 .boton{
-   border: solid 1px #027B8D;
+   border: solid 2px #027B8D;
    color: #027B8D;
 }
 
-.boton:hover{
-    color: white;
-    background-color:#027B8D ;
-    border: solid 1px #027B8D;
+.boton:hover, .boton:active{
+    color: white !important;
+    background-color:#027B8D  !important;
+    border: solid 1px #027B8D !important;
+}
+
+ input , textarea{
+    padding: 2px;
+    background-color: #f0e2c4 !important;
+    border: 2px solid #027B8D !important; 
+    border-radius: 2rem;
+} 
+
+.conditions:checked {
+    background-color:#027B8D  !important;
+
 }
 
 
-@media  (max-width:426px){
+@media  (max-width:900px){
     .form-image{
         width: 0;
+    }
+
+    .link{
+        align-items: center;
+    }
+
+    .link p{
+        text-align: center;
+    }
+
+    .link a{
+        text-align: center;
     }
 }
