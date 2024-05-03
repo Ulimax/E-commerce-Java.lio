@@ -1,0 +1,13 @@
+.formulario {
+    width: 90%;
+}
+    .progress-bar-2 {
+    width: 33.33%;
+    background-color: var(--darkturquoise) !important;
+    animation: 1s forwards ease-out increase-two-thirds;
+    }
+    @keyframes increase-two-thirds {
+    to {
+        width: 66.66%;
+    }
+}

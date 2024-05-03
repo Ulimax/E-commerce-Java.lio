@@ -26,6 +26,7 @@ function displayProducts(purchase) {
   document.querySelector(".total").innerHTML = `
 <p>MXN$ ${total}.00</p>
 `;
+localStorage.removeItem("backpack");
 }
 
 displayProducts(JSON.parse(localStorage.getItem("backpack")));
