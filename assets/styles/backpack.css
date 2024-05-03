@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .sidebar{
     width: 90%;
     border-radius: 5px;
