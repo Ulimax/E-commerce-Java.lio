@@ -86,8 +86,8 @@ form fieldset {
 }
 
 .boton{
-   border: solid 2px #027B8D;
-   color: #027B8D;
+   border: solid 2px #027B8D !important;
+   color: #027B8D !important;
 }
 
 .boton:hover, .boton:active{

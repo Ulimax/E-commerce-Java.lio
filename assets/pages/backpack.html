@@ -6,45 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/styles/backpack.css">
   <link rel="stylesheet" href="/assets/styles/default.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Mochila de compras</title>
 </head>
 
 <body>
-   <header>
+  <header>
     <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
       <div class="progress-bar progress-bar-1"></div>
     </div>
-  </header> 
-   <main class="backpackbody">
+  </header>
+  <main class="backpackbody">
     <div class="container-fluid titillium-web-semibold d-flex flex-column align-items-center">
       <div class="row">
-        <div class="col-12 text-center mt-5"><h1 class="namdhinggo-regular">Mochila</h1></div>
+        <div class="col-12 text-center mt-5">
+          <h1 class="namdhinggo-regular">Mochila</h1>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-4"><span>Destino</span></div>
-        <div class="col-4"><span>Reservaciones</span></div>
-        <div class="col-4"><span>Precio</span></div>
+      <div class="row cart-item2">
+        <div class="cart-item2">
+          <div class="mochila0"></div>
+          <div class="mochila1"><span class="disapered">Destino</span></div>
+          <div class="mochila2"><span>Reservaciones</span></div>
+          <div class="mochila3"><span>Precio</span></div>
+        </div>
       </div>
-      <div class="row cart-item">
+      <div class="row cart-item borderless">
         <span>Tu mochila está vacía</span>
       </div>
       <div class="row">
-        <div class="col-4">
-          <span>Total</span>
+        <div class="col-4 link">
+          <p >¿Olvidaste algo?</p>
+          <a  href="/index.html">Volver a inicio</a>
         </div>
-        <div class="col-4">
+        <div class="col-4"></div>
+        <div class="col-4 total">
+          <span >Total:</span>
           <span id="total">MXN$ 0.00</span>
         </div>
       </div>
-      <div class="row">
-        <span>¿Olvidaste algo?</span>
-        <a href="/index.html">Volver a inicio</a>
-      </div>
-    </div>  
+    </div>
 
-<!-- TABLA MOCHILA -->
-<!--  <header>
+    <!-- TABLA MOCHILA -->
+    <!--  <header>
   <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
     <div class="progress-bar progress-bar-1"></div>
   </div>
@@ -105,9 +110,11 @@
   <a href="/index.html">Volver a inicio</a>
   </div> -->
 
-</main>
+  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
   <script src="/assets/scripts/backpack.js"></script>
 
