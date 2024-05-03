@@ -4,8 +4,11 @@ const getPageName = () => {
 
 const renderNavbar = () => {
   const pages = ["index.html", "contact-form.html", "about-us.html", "log-in.html", "sign-up.html", "admin-posts.html"];
-  const backpackCounter = localStorage.getItem("backpack") ? JSON.parse(localStorage.getItem("backpack")).length ? JSON.parse(localStorage.getItem("backpack")).length : "": "";
-
+  let backpackCounter;
+  if (localStorage.getItem("backpack")) {
+    const reservations = JSON.parse(localStorage.getItem("backpack")).reservations;
+    backpackCounter = reservations.length ? reservations.reduce((accumulator, currentValue) => accumulator + currentValue) : "";
+  } else backpackCounter = "";
   document.querySelector("header").innerHTML = `
     <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
       <div class="container-fluid">
@@ -111,53 +114,54 @@ const renderNavbar = () => {
 
 const renderFooter = () => {
   document.querySelector("footer").innerHTML = `
-    <div class="footer-decorator"></div>
-    <div class="container-fluid footer d-flex flex-column titillium-web-semibold">
-      <div class="mt-4">
-        <div class="row">
-          <div class="ftr-section d-flex flex-column col-12 col-md-4 p-4 text-light">
-            <div class="d-flex my-4">
-              <img src="/assets/icons/logo-white.png" class="m-auto" alt="Logo nuevo mundo travel" width="100">
-            </div>
-            <span class="mt-4">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jalisco, México.</span>
-            <span class="mt-4">¡Conócenos!</span>
-            <div class="ftr-smedia-cntr d-flex mt-4">
-              <a href="https://www.instagram.com/nuevomundo_travel" target="_blank"><img class="ftr-smedia-i" src="/assets/icons/instagram-white.svg" alt="Instagram"></a>
-              <a href="https://www.facebook.com/nuevomundotraveltuours" target="_blank"><img class="ftr-smedia-i" src="/assets/icons/facebook-white.svg" alt="Facebook"></a>
-              <a href="https://wa.me/3221749411" target="_blank"><img class="ftr-smedia-i" src="/assets/icons/whatsapp-white.svg" alt="WhatsApp"></a>
-            </div>
-          </div>
-          <div class="ftr-section col-12 col-md-4 mt-4 p-4 text-light">
-            <span class="titillium-web-semibold fw-bold">Navegación</span>
-            <ul class="ftr-nav titillium-web-semibold mt-4">
-              <li><a href="/index.html">Inicio</a>
-              <li><a href="/assets/pages/contact-form.html">Contacto</a>
-              <li><a href="/assets/pages/about-us.html">Acerca de nosotros</a>
-            </ul>
-            <div class="d-flex flex-column mt-4">
-              <span class="titillium-web-semibold fw-bold atention-label">Atención</span>
-              <span class="titillium-web-semibold mt-4">nuevomundotravell@gmail.com</span>
-              <span class="titillium-web-semibold">Lunes a domingo de 8 a.m. a 8 p.m.</span>
-            </div>
-          </div>
-          <div class="ftr-section d-flex flex-column col-12 col-md-4 my-4 p-4 text-light rounded-3">
-            <a href="/assets/pages/terms-and-conditions.html">Términos y condiciones</a>
-            <a href="/assets/pages/notice-of-privacy.html">Aviso legal</a>
-            <span class="mt-4">Impulsado por</span>
-            <a class="mt-4" href="https://mexico.generation.org/" target="_blank">
-              <img src="/assets/icons/generation-logo-white.svg" width="120px" class="mb-4" height="auto" alt="Logo Generation">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-auto">
-        <div class="row text-light text-center p-0 ftr-copyright">
-          <span class="mt-auto">Copyright \u00a9 2024 Nuevo Mundo Travel</span>
-          <span class="">Todos los derechos reservados</span>
-        </div>
-      </div>
-    </div>
-  `;
+       <div class="footer-decorator"></div>
+        <div class="container-fluid footer d-flex flex-column titillium-web-semibold">
+             <div class="mt-4">
+             <div class="row">
+               <div class="ftr-section d-flex flex-column col-12 col-md-4 p-4 text-light">
+               <div class="d-flex my-4">
+                   <img src="/assets/icons/logo-white.png" class="m-auto" alt="Logo nuevo mundo travel" width="100">
+                 </div>
+                 <span class="mt-4">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jalisco, México.</span>
+                 <span class="mt-4">¡Conócenos!</span>
+                 <div class="ftr-smedia-cntr d-flex mt-4">
+                   <a href="https://www.instagram.com/nuevomundo_travel"><img class="ftr-smedia-i" src="/assets/icons/instagram-white.svg" alt="Instagram"></a>
+                   <a href="https://www.facebook.com/nuevomundotraveltuours"><img class="ftr-smedia-i" src="/assets/icons/facebook-white.svg" alt="Facebook"></a>
+                   <a href="https://wa.me/3221749411"><img class="ftr-smedia-i" src="/assets/icons/whatsapp-white.svg" alt="WhatsApp"></a>
+                 </div>
+               </div>
+               <div class="ftr-section col-12 col-md-4 mt-4 p-4 text-light">
+                  <span class="titillium-web-semibold fw-bold">Navegación</span>
+                 <ul class="ftr-nav titillium-web-semibold mt-4">
+                 <li><a href="/index.html">Inicio</a>
+                   <li><a href="/assets/pages/contact-form.html">Contacto</a>
+                   <li><a href="/assets/pages/about-us.html">Acerca de nosotros</a>
+                 </ul>
+                  <div class="d-flex flex-column mt-4">
+                  <span class="titillium-web-semibold fw-bold atention-label">Atención</span>
+                  <span class="titillium-web-semibold mt-4">nuevomundotravell@gmail.com</span>
+                  <span class="titillium-web-semibold">Lunes a domingo de 8 a.m. a 8 p.m.</span>
+                  </div>
+               </div>
+               <div class="ftr-section d-flex flex-column col-12 col-md-4 my-4 p-4 text-light rounded-3">
+                 <a href="/assets/pages/privacy-policy.html">Política de privacidad</a>
+                 <a href="/assets/pages/privacy-policy.html">Aviso legal</a>
+                 <a href="/assets/pages/privacy-policy.html">Cookies</a>
+                 <span class="mt-4">Impulsado por</span>
+                 <a class="mt-4" href="https://mexico.generation.org/">
+                 <img src="/assets/icons/generation-logo-white.svg" width="120px" class="mb-4" height="auto" alt="Logo Generation"></a>
+   
+               </div>
+                  </div>
+             </div>
+             <div class="mt-auto">
+             <div class="row text-light text-center p-0 ftr-copyright">
+               <span class="mt-auto">Copyright \u00a9 2024 Nuevo Mundo Travel</span>
+               <span class="">Todos los derechos reservados</span>
+             </div>
+             </div>
+           </div>
+     `;
 };
 
 const includeLinks = () => {
