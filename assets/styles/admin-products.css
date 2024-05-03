@@ -64,7 +64,6 @@ form fieldset {
     left:0px;
     margin-left: 35px;
     border-radius: 20px;
-    z-index: -1;
 }
 
 .link{
@@ -97,7 +96,7 @@ form fieldset {
     border: solid 1px #027B8D !important;
 }
 
- input {
+ input , textarea{
     padding: 2px;
     background-color: #f0e2c4 !important;
     border: 2px solid #027B8D !important; 
@@ -110,7 +109,7 @@ form fieldset {
 }
 
 
-@media  (max-width:600px){
+@media  (max-width:900px){
     .form-image{
         width: 0;
     }
