@@ -4,30 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../styles/default.css">
-    <style> *{text-align:justify;} body{background-color: #FAEED2; 
+    <style> *{text-align:center;} body{background-color: #FAEED2; 
         font-family: "Titillium Web", sans-serif;
         font-weight: 300;
         font-style: normal;
         font-size: small;} </style>
     <title>Recibo final</title> 
 </head>
+<style>
+    .franja{
+      background-color:  #027B8D; /* Cambia 'green' por cualquier código de color verde que prefieras */
+      height: 3px; /* Ajusta la altura según necesites */
+      width: 100%; /* Esto hará que la franja se extienda a lo largo de toda la página */
+    }
+
+    .contenedor{
+  
+    justify-content: center;
+    border: 2px solid #0098B1; /* Borde sólido con color */
+    border-radius: 15px; /* Radio del borde para redondear las esquinas */
+    padding: 20px; /* Espacio interior para que el contenido no toque los bordes */
+    width: 300px; /* Ancho del contenedor */
+    height: auto; /* Altura del contenedor */
+    margin:auto;
+    /* Color de fondo del contenedor */
+  }
+
+  .encabezado img {
+            left: 60%;
+            
+        }
+    .encabezado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100px;
+
+    }
+
+
+  </style>
 <body>
-    <strong> TU INFORMACIÓN</strong>
+    <br>
+    <div class="encabezado">
+        <h2>RECIBO DE COMPRA</h2>
+        <img id="logo" src="../icons/logo.png" alt="Logo" height="100"> <!-- Ajusta la ruta y dimensiones según necesites -->
+        
+    </div>
+    <div class="franja"></div><br>
     <main>
-        <div class="user-info">
+        <h4>TUS DATOS: </h4><div class="user-info contenedor">
 
-        </div>
+        </div><br>
 
-        <div class="posts-info">
+        <h4>TUS VIAJES: </h4><div class="posts-info contenedor">
 
-        </div>
+        </div><br>
 
-        <div class="total">
+        <h4>TOTAL: </h4><div class="total contenedor">
 
-        </div>
+        </div><br><br>
+        
     </main>
 
-    <button id="print" type="submit" class="btn btn-outline-success boton" onclick="imprimir()">Imprimir</button>
+    <button id="print" type="submit" class="btn btn-outline-success boton" onclick="imprimir()">
+        <img src="../img/printer.png" alt="Imagen de botón" height="40" width="40">
+    </button>
 </body> 
 <script src="../scripts/printreceipt.js"></script>
 </html>
