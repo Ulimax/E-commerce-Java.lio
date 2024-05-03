@@ -26,13 +26,14 @@
     display:block;
 }
 
-#register-form{
+ #register-form{
     max-width: 90%;
-    padding: 3rem;
-    border: 2px solid #0Af;
+    padding: 2rem;
+    border: 4px solid #0Af !important;
     border-radius: 2rem;
     background-color: #fff;
-}
+} 
+
 
 .boton{
     border: solid 1px #027B8D !important ;

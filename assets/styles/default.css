@@ -4,11 +4,13 @@
     --coral: #EBA972;
     --turquoise: #0098B1; 
     --darkturquoise:#027B8D;
+    --brown: #4D3826;
 }
 
 * {
     margin: 0;
     padding: 0;
+    /* color: var(--brown); */
 }
 
 .titillium-web-semibold {
