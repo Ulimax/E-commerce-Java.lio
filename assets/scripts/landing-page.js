@@ -29,14 +29,35 @@ function displayProducts(products) {
 
 function openModal(product) {
 
-  const modalContent = `
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>${product.title}</h2>
-        <p>Fecha: ${product.date}</p>
-        <p>Precio: MXN$ ${product.price}.00</p>
-        <p>Descripción: ${product.description}</p>
+ const modalContent = `
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>${product.title}</h2>
+               
+                <p> Precio: $${product.price}.00</p>
+                <ul> ⭐Descripción: ${product.description}
+                <li> 📆Fecha de Salida: ${product.departureDate}</li>
+                <li> 📆Fecha de llegada: ${product.returnDate}</li>
+                <li> Punto de partida: 
+                     <ul>
+                     <li>${product.departurePoint1}</li>
+                     <li>${product.departurePoint2}</li>
+                     <li>${product.departurePoint3}</li>
+                     </ul>
+                </li>
+                
+                <li> Incluye: 
+                    <ul>
+                      <li> ${product.amenity1} </li>
+                      <li> ${product.amenity2} </li>
+                      <li> ${product.amenity3} </li>
+                      <li> ${product.amenity4} </li>
+                      <li> ${product.amenity5} </li>
+                    </ul>
+                </li>
+                <li> Lugares disponibles: ${product.availableSpots}</li>
+                </ul>
       </div>
     </div>
   `;
