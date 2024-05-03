@@ -4,8 +4,11 @@ const getPageName = () => {
 
 const renderNavbar = () => {
   const pages = ["index.html", "contact-form.html", "about-us.html", "log-in.html", "sign-up.html", "admin-posts.html"];
-  const backpackCounter = localStorage.getItem("backpack") ? JSON.parse(localStorage.getItem("backpack")).reservations.length ? JSON.parse(localStorage.getItem("backpack")).reservations.reduce((accumulator, currentValue) => accumulator + currentValue) : "": "";
-
+  let backpackCounter;
+  if (localStorage.getItem("backpack")) {
+    const reservations = JSON.parse(localStorage.getItem("backpack")).reservations;
+    backpackCounter = reservations.length ? reservations.reduce((accumulator, currentValue) => accumulator + currentValue) : "";
+  } else backpackCounter = "";
   document.querySelector("header").innerHTML = `
     <nav class="navbar navbar-expand bg-body-transparent d-none d-md-block">
       <div class="container-fluid">
