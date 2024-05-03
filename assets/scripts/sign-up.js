@@ -36,7 +36,7 @@ registerForm.addEventListener("submit", (e) => {
         createUser(userData);
         swalWithBootstrapButtons.fire({
           title: "Usuario creado",
-          text: "felicidades",
+       /*    text: "felicidades", */
           icon: "success"
         });
       }
