@@ -54,12 +54,12 @@
 
 
 
-+ Eric Elizondo Vega
-+ Jetzel Castillo Baez  @YetzelBaez23
-+ Mizaid Ulises Ortega Ortega @Ulimax
++ Eric Elizondo Vega ![Eric Elizondo Vega](https://github.com/account)
++ Jetzel Castillo Baez 
++ Mizaid Ulises Ortega Ortega 
 + Penelope Alejandre Perez
 + Miguel González Martínez
 + Ariana Nathali Colmenares Rubio
 + José de Jésus López Morales
 
-
+ @YetzelBaez23 @Ulimax
