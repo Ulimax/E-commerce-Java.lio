@@ -48,12 +48,11 @@
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/0dab9b0a-3d20-4657-9884-c51ff3a5eeba" width="160" height="auto">
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/d0a729c1-e2db-460d-9a54-7e8fbb9128b4" width="160" height="auto">
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/4eb6a2c5-09e0-4b3c-a6cf-6f48b23a79f3" width="160" height="auto">
-
-
 </section>
-## Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
-<section>
 
+## Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
+
+<section>
 + <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius: 50%;">  Eric Elizondo Vega  
 +  <img src="https://avatars.githubusercontent.com/u/160265351?s=400&u=ff748f6309b4bb80b0d04535a352433a92879687&v=4" width="50" height="auto" style="border-radius: 50%;">  Jetzel Castillo Baez 
 +  <img src="https://avatars.githubusercontent.com/u/111305296?v=4" width="50" height="auto" style="border-radius: 50%;">  Mizaid Ulises Ortega Ortega
@@ -61,5 +60,4 @@
 + <img src="https://avatars.githubusercontent.com/u/157545685?v=4" width="50" height="auto" style="border-radius: 50%;">  Miguel Ángel González Martínez 
 + <img src="https://avatars.githubusercontent.com/u/160262662?v=4" width="50" height="auto" style="border-radius: 50%;">  Ariana Nathali Colmenares Rubio 
 + <img src="https://avatars.githubusercontent.com/u/160262027?v= " width="50" height="auto" style="border-radius: 50%;">  José de Jésus López Morales 
-
 </section>
