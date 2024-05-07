@@ -55,8 +55,8 @@
 
 
 + Eric Elizondo Vega  <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius: 50px;">
-+ Jetzel Castillo Baez 
-+ Mizaid Ulises Ortega Ortega 
++ Jetzel Castillo Baez  <img src="https://avatars.githubusercontent.com/u/160265351?s=400&u=ff748f6309b4bb80b0d04535a352433a92879687&v=4" width="50" height="auto" style="border-radius: 50px;">
++ Mizaid Ulises Ortega Ortega <img src="https://avatars.githubusercontent.com/u/111305296?v=4 " width="50" height="auto" style="border-radius: 50px;">
 + Penelope Alejandre Perez
 + Miguel González Martínez
 + Ariana Nathali Colmenares Rubio
