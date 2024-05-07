@@ -18,7 +18,8 @@
 ![trips](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/f9ef60cc-f88b-420b-9ba4-def3ad518aed)
 
   1.2.-Modals
-  ![Screenshot 2024-05-06 202058](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/3574c96c-b7f4-42cb-abc1-9fd643f32030)
+![modalsss](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/8d17896f-d569-4fa9-b9f1-ced3cc05162a)
+
 
 2.- Contactanos
 ![Screenshot 2024-05-06 201802](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/f93d3af2-1a44-47ee-93d7-bb08e806df7d)
@@ -43,14 +44,15 @@
 <section> 
 <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/a995ef70-b21b-4e3e-a66b-f77ea3aa3692" width="160" height="auto">
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/951eae76-dcbd-4aac-94e6-599b8315479b" width="160" height="auto">
- <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/9f73af0b-5189-4742-8acc-f86196a27544" width="160" height="auto">
+ <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/0dab9b0a-3d20-4657-9884-c51ff3a5eeba" width="160" height="auto">
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/d0a729c1-e2db-460d-9a54-7e8fbb9128b4" width="160" height="auto">
  <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/4eb6a2c5-09e0-4b3c-a6cf-6f48b23a79f3" width="160" height="auto">
+
 
 </section>
 
 
-##Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:**
+##Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
 
 
 
