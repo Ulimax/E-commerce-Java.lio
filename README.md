@@ -55,11 +55,11 @@
 
 
 + Eric Elizondo Vega
-+ Jetzel Castillo Baez
-+ Mizaid Ulises Ortega Ortega
++ Jetzel Castillo Baez  @YetzelBaez23
++ Mizaid Ulises Ortega Ortega @Ulimax
 + Penelope Alejandre Perez
 + Miguel González Martínez
 + Ariana Nathali Colmenares Rubio
 + José de Jésus López Morales
 
-@ulimax @YetzelBaez23
+
