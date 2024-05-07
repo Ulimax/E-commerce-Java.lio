@@ -54,7 +54,7 @@
 
 
 
-+ Eric Elizondo Vega  <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius:50%">
++ Eric Elizondo Vega  <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius: 50px;">
 + Jetzel Castillo Baez 
 + Mizaid Ulises Ortega Ortega 
 + Penelope Alejandre Perez
