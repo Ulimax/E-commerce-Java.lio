@@ -9,7 +9,7 @@
 <a href="https://nuevomundotravel.netlify.app/" target="_blank"> Nuevo Mundo Travel</a>
 </section>
 
-## Indice 
+## Indice: 
 
 ![Screenshot 2024-05-06 201724](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/fd309fac-bce8-4306-8eac-91ad6e50842f)
 
@@ -39,8 +39,18 @@
 6.2.-Recibo de compra 
 ![receipt](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/0f158249-ac9c-4ef0-8e67-83a975dc945f)
 
+<section> # ¡Nuestra página es responsiva!
+<img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/a995ef70-b21b-4e3e-a66b-f77ea3aa3692" width="90" height="auto">
+<img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/d0a729c1-e2db-460d-9a54-7e8fbb9128b4" width="90" height="auto">
+ <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/951eae76-dcbd-4aac-94e6-599b8315479b" width="90" height="auto">
+ <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/9f73af0b-5189-4742-8acc-f86196a27544" width="90" height="auto">
+ <img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/4eb6a2c5-09e0-4b3c-a6cf-6f48b23a79f3" width="90" height="auto">
 
-Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team**
+
+
+</section>
+
+Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:**
 + Eric Elizondo Vega
 + Jetzel Castillo Baez
 + Mizaid Ulises Ortega Ortega
