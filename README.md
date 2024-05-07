@@ -54,7 +54,7 @@
 
 
 
-+ Eric Elizondo Vega ![Eric Elizondo Vega](https://github.com/account)
++ Eric Elizondo Vega ![Eric Elizondo Vega](https://avatars.githubusercontent.com/u/154300901?s=400&v=4)
 + Jetzel Castillo Baez 
 + Mizaid Ulises Ortega Ortega 
 + Penelope Alejandre Perez
