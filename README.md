@@ -51,9 +51,9 @@
 
 
 </section>
-
-<section>
 ## Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
+<section>
+
 
 
 
