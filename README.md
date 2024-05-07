@@ -51,8 +51,8 @@
 
 </section>
 
-
-##Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
+<section>
+## Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team:** 
 
 
 
@@ -64,4 +64,4 @@
 + <img src="https://avatars.githubusercontent.com/u/160262662?v=4" width="50" height="auto" style="border-radius: 50%;">  Ariana Nathali Colmenares Rubio 
 + <img src="https://avatars.githubusercontent.com/u/160262027?v= " width="50" height="auto" style="border-radius: 50%;">  José de Jésus López Morales 
 
-
+</section>
