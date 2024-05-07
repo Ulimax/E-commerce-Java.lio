@@ -54,12 +54,12 @@
 
 
 
-+ Eric Elizondo Vega  <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius: 50%;" >
-+ Jetzel Castillo Baez  <img src="https://avatars.githubusercontent.com/u/160265351?s=400&u=ff748f6309b4bb80b0d04535a352433a92879687&v=4" width="50" height="auto" style="border-radius: 50%;">
-+ Mizaid Ulises Ortega Ortega <img src="https://avatars.githubusercontent.com/u/111305296?v=4" width="50" height="auto" style="border-radius: 50%;">
-+ Penelope Alejandre Perez <img src="https://avatars.githubusercontent.com/u/160263083?v=4" width="50" height="auto" style="border-radius: 50%;">
-+ Miguel Ángel González Martínez <img src="https://avatars.githubusercontent.com/u/157545685?v=4" width="50" height="auto" style="border-radius: 50%;">
-+ Ariana Nathali Colmenares Rubio <img src="https://avatars.githubusercontent.com/u/160262662?v=4" width="50" height="auto" style="border-radius: 50%;">
-+ José de Jésus López Morales <img src="https://avatars.githubusercontent.com/u/160262027?v= " width="50" height="auto" style="border-radius: 50%;">
++ <img src="https://avatars.githubusercontent.com/u/154300901?s=400&v=4" width="50" height="auto" style="border-radius: 50%;" >Eric Elizondo Vega  
++  <img src="https://avatars.githubusercontent.com/u/160265351?s=400&u=ff748f6309b4bb80b0d04535a352433a92879687&v=4" width="50" height="auto" style="border-radius: 50%;">Jetzel Castillo Baez 
++  <img src="https://avatars.githubusercontent.com/u/111305296?v=4" width="50" height="auto" style="border-radius: 50%;"> Mizaid Ulises Ortega Ortega
++ <img src="https://avatars.githubusercontent.com/u/160263083?v=4" width="50" height="auto" style="border-radius: 50%;"> Penelope Alejandre Perez 
++ <img src="https://avatars.githubusercontent.com/u/157545685?v=4" width="50" height="auto" style="border-radius: 50%;"> Miguel Ángel González Martínez 
++ <img src="https://avatars.githubusercontent.com/u/160262662?v=4" width="50" height="auto" style="border-radius: 50%;"> Ariana Nathali Colmenares Rubio 
++ <img src="https://avatars.githubusercontent.com/u/160262027?v= " width="50" height="auto" style="border-radius: 50%;"> José de Jésus López Morales 
 
 
