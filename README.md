@@ -6,8 +6,7 @@
 
 
 ### Esta es una aplicación que demuestra un sitio web de comercio electrónico para una agencia de viajes utilizando la siguiente pila tecnológica: JavaScript, HTML, CSS, Bootstrap, Figma, Jira, GIT y GitHub. La aplicación carga destinos de viaje desde una base de datos MySQL y los muestra. Los usuarios pueden hacer clic en cualquier producto para obtener más información, incluidos precios, reseñas, y  pueden seleccionar artículos para agregarlos a su carrito de compras. Puedes acceder al sitio usando el siguente enlace:
-[Nuevo Mundo Travel] (https://nuevomundotravel.netlify.app/)
-
+<a href="https://nuevomundotravel.netlify.app/"="_blank">Nuevo Mundo Travel</a>
 
 ## Indice 
 
