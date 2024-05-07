@@ -9,9 +9,10 @@
 <a href="https://nuevomundotravel.netlify.app/" target="_blank"> Nuevo Mundo Travel</a>
 </section>
 
-## Indice: 
 
-![Screenshot 2024-05-06 201724](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/fd309fac-bce8-4306-8eac-91ad6e50842f)
+## Database ERD: 
+
+![WhatsApp Image 2024-05-07 at 4 39 51 PM](https://github.com/Ulimax/E-commerce-Java.lio/assets/111305296/fde8a261-23ba-49ad-a529-94847f7771bf)
 
 
 1.1- Inicio
