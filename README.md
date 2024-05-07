@@ -1,12 +1,13 @@
-<img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/497f95d1-3a29-4153-8385-7b9568f69ec4" width="60" height="auto">
+<img src="https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/497f95d1-3a29-4153-8385-7b9568f69ec4" width="80" height="auto">
 
 
 # Nuevo Mundo Travel e-commerce
 
 
-
-### Esta es una aplicación que demuestra un sitio web de comercio electrónico para una agencia de viajes utilizando la siguiente pila tecnológica: JavaScript, HTML, CSS, Bootstrap, Figma, Jira, GIT y GitHub. La aplicación carga destinos de viaje desde una base de datos MySQL y los muestra. Los usuarios pueden hacer clic en cualquier producto para obtener más información, incluidos precios, reseñas, y  pueden seleccionar artículos para agregarlos a su carrito de compras. Puedes acceder al sitio usando el siguente enlace:
+<section>
+ Esta es una aplicación que demuestra un sitio web de comercio electrónico para una agencia de viajes utilizando la siguiente pila tecnológica: JavaScript, HTML, CSS, Bootstrap, Figma, Jira, GIT y GitHub. La aplicación carga destinos de viaje desde una base de datos MySQL y los muestra. Los usuarios pueden hacer clic en cualquier producto para obtener más información, incluidos precios, reseñas, y  pueden seleccionar artículos para agregarlos a su carrito de compras. Puedes acceder al sitio usando el siguente enlace:
 <a href="https://nuevomundotravel.netlify.app/" target="_blank"> Nuevo Mundo Travel</a>
+</section>
 
 ## Indice 
 
@@ -36,6 +37,7 @@
 
  
 6.2.-Recibo de compra 
+![receipt](https://github.com/Ulimax/E-commerce-Java.lio/assets/160265351/0f158249-ac9c-4ef0-8e67-83a975dc945f)
 
 
 Este Gran Proyecto No se habría logrado culminar sin la partipación de nuestro **Dream Team**
